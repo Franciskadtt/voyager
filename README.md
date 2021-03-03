@@ -56,7 +56,6 @@ This website is a tool for users interested in planning and pack for a day or an
 ### Home Section / Landing Page
 - User can click/tap on start button to go directly to the Checklist section
 - User can click/tap on chevron (downarrow) to go to About section
-- Heading 1 - “Voyager”, paragraph  - “Subheading”
 
 ### About Section
 - Paragraph giving some background about the website for the user.
