@@ -1,45 +1,141 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Voyager
 
-Welcome USER_NAME,
+A sailing voyage needs some planning even for an experienced sailor. Voyager is a checklist for Sailors to pack & plan before they set off on an overnight voyage. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+#### The main goals of this site 
+- To be a guideline for sailors so they can know what items to pack on a sailing overnight voyage.
+- To be a checklist for sailors that is customisable and sharable. 
+- To be a tool that can show sailors the quantity of items to buy and the calculate their estimated cost.
+- To help people find a sailing store either online or physical store, to purchase the things they need for their voyage.
 
-## Gitpod Reminders
+## UX
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### User Persona
+This website is a tool for users interested in planning and pack for a day or an overnight sailing trip including beginner to intermediate sailors and people going on a sailing trip. The users want to use this tool as a guide on what to pack but also have a high level view on what needs to be done before they go on a voyage. The users are comfortable with using technology and would like to share information about the trip. 
 
-`python3 -m http.server`
+### Who are we building it for?
+- People planning a day or overnight sailing trip.
 
-A blue button should appear to click: *Make Public*,
+### What are the goals & needs of the user?
+- Have a high level view of the what needs to be done and able to tick items off a list
+- To see number and name items that are already packed
+- To how many items still needs to be packed or purchased
+- To calculate estimate cost of items
+- To share list of items 
+- Easily find information on sailing stores (online or physical stores)
 
-Another blue button should appear to click: *Open Browser*.
+### What are the goals & needs of the business?
+- Be the “go to” planning and checklist tool for users going on a sailing voyage 
+- Help users find sailing stores
+- Gain insights from users what they need from the tool
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### User Stories
+- Beginner to Intermediate sailor who wants to have guidance what to pack for a day trip
+- A Sailor that wants to make sure they have remembered all items to pack
+- A Sailor that wants to be able to list items they need to still buy
+- A Sailor that wants to print a list to take to a store
+- A Sailor that wants to share a list to pack or buy with friends / shipmates
+- A Sailor that wants to be able to calculate the estimate cost of items
+- A Sailor that wants to be able see the number of outstanding items
+- A Sailor that wants to be able to find a sailing store to buy items (either physical or online)
 
-A blue button should appear to click: *Make Public*,
+## Features
+- One page site with 6 sections: Home, About, Checklist, Find a Store, Reviews and Footer section
 
-Another blue button should appear to click: *Open Browser*.
+### Nav bar
+- Logo - if clicked/ tapped - return to Home section
+- Mobile & Tablet - User can tap hamburger icon to open menu with above 6 sections
+- Desktop - Nav bar extended and user can see page sections.
+- Nav bar - If click/tap on Logo - go to Home Section.
+- Nav bar - If click/tap on About - go to About Section.
+- Nav bar - If click/tap on Checklist - go to Checklist Section.
+- Nav bar - If click/tap on Find a Store - go to Find a Store  Section.
+- Nav bar - If click/tap on Reviews - go to Reviews Section.
+- Nav bar - If click/tap on Footer - go to Footer Section.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Home Section / Landing Page
+- User can click/tap on start button to go directly to the Checklist section
+- User can click/tap on chevron (downarrow) to go to About section
+- Heading 1 - “Voyager”, paragraph  - “Subheading”
 
-## Updates Since The Instructional Video
+### About Section
+- Paragraph giving some background about the website for the user.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Checklist Section
+- The user can enter the voyage name in the box with field type = text. 
+- The user can enter the departure point name in the box with field type = text.
+- If user click/tap on “Don’t know where to start button” then a modal displays with instructions.
+- In the Instructions box, there is a “X” which the user can tap to exit the modal and return to the main screen.
+- If user clicks/taps on the “Clear all & Start again” button, then all the values are cleared below.
+- Main Checklist
+    - List of categories in unordered list. If the user click/tap arrow, the list expands. If the user click/tap category in list, list of items for that category will display below in “Items” list. If a category is not selected, the category items will be hidden. Number of items for that category is displayed next to it
+    - List of items linked to a category in unordered list. Only show max 7 items. User can scroll down to view more items.
+    - If the user click/tap on item, the item moves to “Done” container the background colour changes and a checkmark display.
+    - Option where user can add own item in the box with field type = text. If user click on garbage icon, item is removed
+    - List of “Done” items - Display check icon with heading next to it “Items packed” and counter of number of items in “Done” list. Display percentage 
+      completed.  List all items clicked/tapped above. If listed here background colour changes and a checkmark display.
+- Local storage & session storage
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Still to pack & buy Section
+- Items appear here still if it still needs to be packed / purchased - list items here if not selected above. All items in the dropdown list, do not display if user clicked/ tapped above.
+- Items appear here if box was ticked in the Checklist section
+- User can enter number in “Qty” box
+- User can enter a number in “Estimated cost”
+- If user click/tap on “Calculate” -> Sum of all Qty items
+- If user click/tap on “Calculate” -> Sum of Estimate Cost item
+- Email list - email icon, if user click/tap on icon - modal opens to display info to email options (API)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Find a store
+- Display stores on Google Maps (API) with map markers
+- List of links to online stores - if user click/tap on box - new page open with company website
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Reviews
+- Have a carousel with cards. Can click on arrows to toggle left or right
+- If hover over review card, card stand out
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Footer
+Social links - click/tap on social icons to open new page to social media pages
+ 
+### Existing Features
+#### Header
+- Logo - Allows the user to easily recognise the brand of “Voyage”. If the user clicks on the logo, it will return the users to the “Home” section as they would expect.
+- Navigation Bar - Allows the user to easily navigate the website's sections and find what they are looking for with ease and speed.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+#### Specific Sections
+- Landing Page Section - Allows the user to see a quick snapshot of who is Franciska Du Toit
+- About Section - Allows the user to see a high level page to navigate them to specific projects in her portfolio
+- Checklist Section- Allows user to select pre-populated items they have packed but also select items they add themselves. The users can also see a list of items they have already packed. 
+- Still to pack & purchase Section- Allows user to see items still to be packed. The user can add the quantity of items to buy and calculate the estimated cost. 
+- Find a Store Section - Allows user to find a sailing store online or on Google maps if they want to go to a physical store. If they choose a physical store, the user will be able to see basic information on the store.
+- Review Section - Allow user to see other users’ feedback and how they used it. It also allows the user to give their own feedback.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+#### Footer 
+Social Icons - Allows the user to access the social platforms that the designer & creator of the website uses.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Features Left to Implement
+- A unique environment for the user where they can sign in with a user name and password so that their information can be saved across devices - will need further skills to implement this feature
+- A feature to store documents related to a voyage - will need further skills to implement this feature
 
---------
+## Technologies Used
+- Languages - This project uses HTML, CSS and Javascript languages
+- [Gitpod](https://www.gitpod.io/) - This projects used **Gitpod** as the IDE while building the website.
+- [Popper.js](https://popper.js.org/)
+    - The project uses **Popper,js** reference Javascript needed for the responsive navbar
+- [BootstrapCDN](https://www.bootstrapcdn.com/)
+    - The project uses **Bootstrap4** to simplify the structure of the website and help make the website responsive easy to do.
+    - The project also uses BootstrapCDN to provide icons from [FontAwesome](https://www.bootstrapcdn.com/fontawesome/)
+- [Google Fonts](https://fonts.google.com/)
+    - The project uses **Google fonts** to style the website fonts.
 
-Happy coding!
+## Testing - to be done
+
+## Deployment - to be done
+
+## Credits - to be done
+
+### Content
+- The copy and text for this website was created by Franciska Du Toit
+
+### Media 
+
+### Acknowledgements
