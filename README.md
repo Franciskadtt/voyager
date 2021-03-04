@@ -39,13 +39,18 @@ This website is a tool for users interested in planning and pack for a day or an
 - A Sailor that wants to be able see the number of outstanding items
 - A Sailor that wants to be able to find a sailing store to buy items (either physical or online)
 
-### Wireframe mockups:
-- [Landing Page Section]()
-- [About Section]()
-- [Checklist Section]()
-- [Still to pack/buy Section]()
-- [Find a Store Section]()
-- [Review Section]()
+### Wireframe mockups
+#### Low Fidelity:
+- [Landing Page Section](assets/wireframes/landing_page.png)
+- [About Section](assets/wireframes/about_section.png)
+- [Checklist Section](assets/wireframes/checklist_section.png)
+- [To Buy List Section](assets/wireframes/to_buy_list_section.png)
+- [Find a Store Section](assets/wireframes/find_a_store_section.png)
+- [Review Section](assets/wireframes/review section.png)
+
+#### High Fidelity:
+- [Mobile & Tablet](assets/wireframes/mobile_tablet_wireframe.png)
+- [Desktop](assets/wireframes/desktop_wireframe.png)
 
 ## Features
 - One page site with 6 sections: Home, About, Checklist, Find a Store, Reviews and Footer section
