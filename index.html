@@ -61,7 +61,7 @@
         <div class="hero-image">
             <div class="hero-text">
                 <h1>Voyager</h1>
-                <p>A Checklist & Planner for the prepared Sailor</p>
+                <p class="lead">A Checklist & Planner for the prepared Sailor</p>
                 <a class="btn btn-primary" href="#checklist-section" role="button">
                     <i class="fas fa-arrow-right"></i>
                     <span>Start</span>
@@ -84,8 +84,60 @@
     </section>
     <!-- About section end -->
 
+    <!-- Checklist section -->
+    <section id="checklist-section" > 
+        <h2>Checklist</h2>
 
-    <section id="checklist-section" >Checklist</section>
+        <!-- Voyage info -->
+        <form>
+            <div>
+                <label >Type Voyage Name</label>
+                <input type="text">
+            </div>
+            <div>
+                <label >Departure Point</label>
+                <input type="text">
+            </div>
+        </form>
+        <!-- Voyage info end -->
+
+        <!-- Voyage info -->
+        <!-- Button trigger modal - orignally from Bootstrap with modifications-->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Show me the ropes
+        </button>
+        <!-- Button trigger modal end-->
+        <!-- Modal - orignally from Bootstrap with modifications -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Let’s get you started</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>There are a lot of complex things in the world, this doesn’t have to be one of them. Let’s break it down for you.</h6>
+                        <ol>
+                            <li>Select the item you have packed or prepared from the pre-populated list or add your own item by typing in your item by clicking/tapping on the “+” button. </li>
+                            <li>Select “To buy” option next to each item if you still need to buy it. Add the quantity & estimated cost. Then select “Calculate” to see total items to buy and the estimated cost.  If you enter you email address, you can email the list.</li>
+                            <li>Find an online or physical sailing store to purchase what you need. </li>
+                            <li>Add a review to give us feedback on how you use Voyager. </li>
+                        </ol>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal end -->
+        <!-- Voyage info end -->
+
+    </section>
+    <!-- Checklist section end -->
+
     <section id="buylist-section" >To Buy List</section>
     <section id="store-section" >Find a Store</section>
     <section id="reviews-section" >Reviews</section>
