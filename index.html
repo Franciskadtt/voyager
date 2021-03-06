@@ -295,9 +295,19 @@
     </section>
     <!-- Checklist section end -->
 
-    <section id="buylist-section" >To Buy List</section>
-    <section id="store-section" >Find a Store</section>
+    <!-- Buy List section --> 
+    <section id="buylist-section" >
+        <h2>To Buy List</h2>
+    </section>
+    <!-- Buy List section end--> 
 
+    <!-- Find a Store section --> 
+    <section id="store-section" >
+        <h2>Find a Store</h2>
+    </section>
+<!-- Find a Store section --> 
+
+    <!-- Review section -->  
     <section id="reviews-section container" >
         <h2>What others say</h2>
         <div class="row">
@@ -350,9 +360,43 @@
                     </div>
             </div>
         </div>
-    </section>
+        <!-- Feedback Card -->  
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Feedback</h5>
+                <p class="card-text">We would love to hear your thoughts, suggestions, concerns or problems with anything so we can improve!</p>
+                <!-- Form Code from Bootstrap -->
+                <form>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                        <label for="validationDefault01">First name</label>
+                        <input type="text" class="form-control" id="validationDefault01"  required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                        <label for="validationDefault02">Last name</label>
+                        <input type="text" class="form-control" id="validationDefault02" required>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="validationDefault03">Email</label>
+                        <input type="email" class="form-control" id="validationDefault03" required>
+                        </div>
+                        <div class="col-12">
+                            <label for="message">Message</label>
+                            <textarea rows="3" name="message" id="message" class="form-control" required=""></textarea>
+                        </div>
+                    </form>
 
-        
+                    <button class="btn btn-primary" type="submit">Submit Feedback</button>
+                
+            </div>
+        </div>
+    <!-- Feedback Card end --> 
+
+    </section>
+    <!-- Review section end -->  
+
+    <!-- Footer section -->  
     <footer class="">
         <h5>created by franciska</h5>
             <ul class="list-inline ">
@@ -361,7 +405,7 @@
                 <li><a target="_blank" href="# "><i class="fab fa-twitter"></i></a></li>
             </ul>
     </footer>
-
+    <!-- Footer section end -->  
 <script src="script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
