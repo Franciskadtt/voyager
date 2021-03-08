@@ -6,3 +6,12 @@
     height: 500px;
     width: 100%;
 }
+
+/*--------------------------------------------Review carousel*/
+.carousel-control-prev-icon{
+    background-color: black;
+}
+
+.carousel-control-next-icon {
+    background-color: black;
+}
