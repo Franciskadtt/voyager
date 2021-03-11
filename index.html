@@ -21,7 +21,18 @@
         <link href="assets/css/style.css" rel="stylesheet">
         
     </head>
-
+<style>
+            .tab-pane{
+                height: 550px;
+                overflow-y: scroll;
+            }
+            .list-group-item{
+                cursor: pointer;
+            }
+            .hideItem{
+                display: none;
+            }
+        </style>
 <body>
 
     <header >
@@ -167,106 +178,452 @@
                                 </li>
                             </ul>
                             <div class="tab-content" id="pills-tabContent">
+                                <!-- Cooking Kit list with buttons -->
                                 <div class="tab-pane fade show active" id="pills-cooking" role="tabpanel" aria-labelledby="pills-cooking-tab">
                                     <ul class="list-group">
-                                        <li class="list-group-item">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                                <label class="form-check-label">
-                                                    Aluminum foil
-                                                </label>
-                                                    <div class="btn-group-toggle" data-toggle="buttons">
-                                                        <label class="btn  btn-outline-primary ">
-                                                            <input type="checkbox" checked> To Buy
-                                                        </label>
-                                                        </div>
+                                        <li class="list-group-item">Aluminium Foil
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Aluminium Foil">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
                                             </div>
-                                            
-                                        
                                         </li>
-                                        <li class="list-group-item">Biodegradable soap</li>
-                                        <li class="list-group-item">Bottle opener</li>
-                                        <li class="list-group-item">Can opener</li>
-                                        <li class="list-group-item">Corkscrew</li>
-                                        <li class="list-group-item">Cutting board</li>
-                                        <li class="list-group-item">Dish soap sponge</li>
-                                        <li class="list-group-item">Dish towels </li>
-                                        <li class="list-group-item">Dishes</li>
-                                        <li class="list-group-item">Drain plug for sink</li>
-                                        <li class="list-group-item">Eating utensils </li>
-                                        <li class="list-group-item">Frying pan</li>
-                                        <li class="list-group-item">Large cookpot</li>
-                                        <li class="list-group-item">Large kitchen knife </li>
-                                        <li class="list-group-item">Matches for stove</li>
-                                        <li class="list-group-item">Paper towels</li>
-                                        <li class="list-group-item">Plastic cold cups</li>
-                                        <li class="list-group-item">Plastic hot cups </li>
-                                        <li class="list-group-item">Pot mitten</li>
-                                        <li class="list-group-item">Small kitchen knife </li>
-                                        <li class="list-group-item">Trash bags </li>
+                                        <li class="list-group-item">Biodegradable soap
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Biodegradable soap">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Bottle opener
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Bottle opener">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Can opener
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Can opener">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="list-group-item">Corkscrew
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Corkscrew">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Cutting board
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Cutting board">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Dish soap sponge
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Dish soap sponge">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Dish towels 
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Dish towels">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Dishes
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Dishes">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Drain plug for sink
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Drain plug for sink">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Eating utensils 
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Eating utensils">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Frying pan
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Frying pan">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Large cookpot
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Large cookpot">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Large kitchen knife 
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Large kitchen knife">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Matches for stove
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Matches for stove">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Paper towels
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Paper towels">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Plastic cold cups
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Plastic cold cups">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Plastic hot cups 
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Plastic hot cups ">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Pot mitten
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Pot mitten">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Small kitchen knife 
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Small kitchen knife">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Trash bags 
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Trash bags">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
+                                <!-- Cooking Kit list with buttons end -->
+                                <!-- Food & Drink list with buttons -->
                                 <div class="tab-pane fade" id="pills-food" role="tabpanel" aria-labelledby="pills-food-tab">
                                     <ul class="list-group">
-                                        <li class="list-group-item">Beer</li>
-                                        <li class="list-group-item">Butter</li>
-                                        <li class="list-group-item">Coffee</li>
-                                        <li class="list-group-item">Cold drinks</li>
-                                        <li class="list-group-item">Cooking oil</li>
-                                        <li class="list-group-item">Hot chocolate</li>
-                                        <li class="list-group-item">Menu plan </li>
-                                        <li class="list-group-item">Milk</li>
-                                        <li class="list-group-item">Salt and pepper</li>
-                                        <li class="list-group-item">Snacks</li>
-                                        <li class="list-group-item">Spice shaker</li>
-                                        <li class="list-group-item">Staple foods</li>
-                                        <li class="list-group-item">Tea</li>
-                                        <li class="list-group-item">Vitamins</li>
-                                        <li class="list-group-item">Water</li>
-                                        <li class="list-group-item">Wine</li>
+                                        <li class="list-group-item">Beer
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Beer">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Butter
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Butter">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Coffee
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Coffee">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Cold drinks
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Cold drinks">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Cooking oil
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Cooking oil">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Hot chocolate
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Hot chocolate">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Menu plan 
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Menu plan">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Milk
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Milk">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Salt and Pepper
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Salt and Pepper">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Snacks
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Snacks">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Spice shaker
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Spice shaker">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Staple foods
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Staple foods">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Tea
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Tea">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Vitamins
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Vitamins">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Water
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Water">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Wine
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Wine">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
+                                <!-- Food & Drink list with buttons end -->
+                                <!-- Navigation list with buttons -->
                                 <div class="tab-pane fade" id="pills-navigation" role="tabpanel" aria-labelledby="pills-navigation-tab">
                                     <ul class="list-group">
-                                        <li class="list-group-item">Arrival/departure checklists</li>
-                                        <li class="list-group-item">Binoculars</li>
-                                        <li class="list-group-item">Calculator </li>
-                                        <li class="list-group-item">Charts</li>
-                                        <li class="list-group-item">Cooking oil</li>
-                                        <li class="list-group-item">Cruising guide </li>
-                                        <li class="list-group-item">Drawing compass</li>
-                                        <li class="list-group-item">Pencil & Eraser</li>
-                                        <li class="list-group-item">Hand-bearing compass</li>
-                                        <li class="list-group-item">Knotstick</li>
-                                        <li class="list-group-item">Lead line</li>
-                                        <li class="list-group-item">Light list</li>
-                                        <li class="list-group-item">Log book</li>
-                                        <li class="list-group-item">Parallel rules</li>
-                                        <li class="list-group-item">Plotting ruler</li>
-                                        <li class="list-group-item">Sextant</li>
-                                        <li class="list-group-item">Slide rule</li>
-                                        <li class="list-group-item">Tide tables</li>
+                                        <li class="list-group-item">Arrival/Departure Checklists
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Arrival/Departure Checklists">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Binoculars
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Binoculars">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Calculator 
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Calculator">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Charts
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Charts">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Cooking oil
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Cooking oil">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Cruising guide
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Cruising guide">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Drawing compass
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Drawing compass">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Pencil & Eraser
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Pencil & Eraser">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Hand-bearing compass
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Hand-bearing compass">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Knotstick
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Knotstick">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Lead line
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Lead line">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Light list
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Light list">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Log book
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Log book">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Parallel rules
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Parallel rules">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Plotting ruler
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Plotting ruler">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Sextant
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Sextant">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Slide rule
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Slide rule">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Tide tables
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Tide tables">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
+                                <!-- Navigation list with buttons end -->
+                                <!-- Tool Kit list with buttons -->
                                 <div class="tab-pane fade" id="pills-toolkit" role="tabpanel" aria-labelledby="pills-toolkit-tab">
                                     <ul class="list-group">
-                                        <li class="list-group-item">100' 1/4" nylon line</li>
-                                        <li class="list-group-item">50' 1/8" dacron line</li>
-                                        <li class="list-group-item">50' 3/8" dacron line</li>
-                                        <li class="list-group-item">Assorted bungee cords</li>
-                                        <li class="list-group-item">Bateries (AA & AAA) </li>
-                                        <li class="list-group-item">Duct tape</li>
-                                        <li class="list-group-item">First-aid </li>
-                                        <li class="list-group-item">Flashlight</li>
-                                        <li class="list-group-item">Knife sharpener</li>
-                                        <li class="list-group-item">Leatherman</li>
-                                        <li class="list-group-item">Sewing kit with heavy-duty thread</li>
-                                        <li class="list-group-item">Spare 6V battery</li>
-                                        <li class="list-group-item">Spare winch handle</li>
-                                        <li class="list-group-item">Vise-grips</li>
-                                        <li class="list-group-item">Wire cutters</li>
+                                        <li class="list-group-item">100' 1/4' nylon line
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="100' 1/4' nylon line">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">50' 1/8' dacron line
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="50' 1/8' dacron line">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">50' 3/8' dacron line
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="50' 3/8' dacron line">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Assorted bungee cords
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Assorted bungee cords">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Bateries (AA & AAA)
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Bateries (AA & AAA)">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Duct tape
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Duct tape">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">First-aid Kit
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="First-aid Kit">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Flashlight
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Flashlight">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Knife sharpener
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Knife sharpener">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Leatherman
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Leatherman">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Sewing kit with heavy-duty thread
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Sewing kit with heavy-duty thread">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Spare 6V battery
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Spare 6V battery">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Spare winch handle
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Spare winch handle">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Vise-grips
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Vise-grips">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">Wire cutters
+                                            <div class="btn-group push-right" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-primary checkItem" data-itemname="Wire cutters">Check</button>
+                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
+                                <!-- Tool Kit list with buttons end -->
+                                <!-- My Own Items list with buttons -->
                                 <div class="tab-pane fade" id="pills-ownitems" role="tabpanel" aria-labelledby="pills-ownitems-tab">
                                     <form >
                                         <label for="formOwnInput">Type own Item</label>
@@ -276,10 +633,11 @@
                                             <button class="btn btn-outline-secondary" type="button" id="button-addon2">+</button>
                                         </div>
                                     </form>
-                                    </div>
                                 </div>
-                                <!-- Categories & Items Collapse end -->
+                                <!-- My Own Items list with buttons end -->
                             </div>
+                            <!-- Categories & Items Collapse end -->
+                        </div>
                     </div>
                     <!-- Items to pack end -->
                     <!-- Already Packed items -->
@@ -298,7 +656,10 @@
 
                                 <div id="collapsePacked" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionPacked">
                                 <div class="card-body">
-                                    
+                                    <ul id="packedItems" class="list-group">
+
+                                    </ul>
+
                                 </div>
                                 
                             </div>
@@ -515,12 +876,13 @@
             </ul>
     </footer>
     <!-- Footer section end -->  
-<script src="script.js"></script>
+<script src="assets/js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChqqn8Ai2JeoWjYRLmo2mdSo8TaTdvHr0&callback=initMap" async></script>
 <script src="assets/js/maps.js"></script>
 <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+
 
 </body>
 </html>
