@@ -21,18 +21,7 @@
         <link href="assets/css/style.css" rel="stylesheet">
         
     </head>
-<style>
-            .tab-pane{
-                height: 550px;
-                overflow-y: scroll;
-            }
-            .list-group-item{
-                cursor: pointer;
-            }
-            .hideItem{
-                display: none;
-            }
-        </style>
+
 <body>
 
     <header >
@@ -644,16 +633,8 @@
                     <div class="col-md-12 col-lg-4">
                         <h3>Already Packed</h3>
                         <div class="percentageCount">5%</div>
-                        <div class="accordion" id="accordionPacked">
-                            <div class="card">
-                                <div class="card-header" id="headingPacked">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapsePacked" aria-expanded="true" aria-controls="collapsePacked">
-                                    Items that are Packed
-                                    </button>
-                                </h2>
-                                </div>
-
+                        <div >
+                            <div class="card tab-pane">
                                 <div id="collapsePacked" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionPacked">
                                 <div class="card-body">
                                     <ul id="packedItems" class="list-group">
