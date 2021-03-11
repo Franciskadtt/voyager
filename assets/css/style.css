@@ -1,5 +1,17 @@
 
 
+/*--------------------------------------------Headings*/
+
+.hero-text{
+    text-align: center;
+}
+
+
+.sections-title {
+    text-align: center;
+}
+
+
 
 /* original code credit: https://css-tricks.com/snippets/jquery/smooth-scrolling/*/
 html {
