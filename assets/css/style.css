@@ -16,7 +16,24 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+/*--------------------------------------------Check List Scroll */
+
+.tab-pane{
+    height: 550px;
+    overflow-y: scroll;
+}
+
+.list-group-item{
+    cursor: pointer;
+}
+
+.hideItem{
+    display: none;
+}
+
+
 
 /*--------------------------------------------Google Maps*/
 
