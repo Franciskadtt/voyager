@@ -57,6 +57,7 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
 
 .landing-title{
@@ -68,13 +69,19 @@ html {
     padding-top: 15%;
 }
 
-.btn {
+.start-btn {
     color: #003348;
     background-color: #F2B940;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 50px;
     padding-right: 20%;
     padding-left: 20%;
+}
+
+
+.arrow{
+    color: #ffffff;
+    font-size: xx-large;
 }
 
 
