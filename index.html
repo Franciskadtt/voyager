@@ -24,57 +24,53 @@
 
 <body>
 
-    <header >
-        <!-- Nav Menu Section Code from Bootstrap-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#landing-section">
-                <img src="assets/images/voyager_logo.png" width="30" height="30" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about-section">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#checklist-section">Checklist</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#buylist-section">To Buy List</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#store-section">Find a Store</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#reviews-section">Reviews</a>
-                        </li>
-                    </ul>
-                </div>
-        </nav>
-        <!-- Navbar end -->
-    </header>
-
     <!-- Landing section -->
-    <section id="landing-section" >
+    <header>
         <div class="hero-image" style="background-image: url(assets/images/hero-image.png);">
-            <div class="hero-text">
-                <h1 class="landing-title" >Voyager</h1>
-                <p class="lead">A Checklist & Planner for the prepared Sailor</p>
-                <a class="btn btn-primary" href="#checklist-section" role="button">
-                    <i class="fas fa-arrow-right"></i>
-                    <span>Start</span>
-                </a>
-                <div class= "hero-arrow" >
-                    <a href="#about-section" role="button">
-                    <i class="fas fa-chevron-down"></i>
+            <!-- Nav Menu Section Code from Bootstrap-->
+                <nav class="navbar navbar-expand-lg navbar-light " id="navbar-position" >
+                    <a class="navbar-brand" href="#landing-section" id="logo">
+                        <img src="assets/images/voyager_logo.png" width="50" height="50" alt="">
                     </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-section">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#checklist-section">Checklist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#buylist-section">To Buy List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#store-section">Find a Store</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#reviews-section">Reviews</a>
+                            </li>
+                        </ul>
                     </div>
-                
-            </div>
-        </div>
-    </section>
+                </nav>
+        <!-- Navbar end -->
+                <div class="hero-text">
+                    <h1 class="landing-title" >Voyager</h1>
+                    <p class="landing-subtitle">A Checklist & Planner for the prepared Sailor</p>
+                    <a class="btn btn-primary" href="#checklist-section" role="button">
+                        <i class="fas fa-arrow-right"></i>
+                        <span>Start</span>
+                    </a>
+                    <div class= "hero-arrow" >
+                        <a href="#about-section" role="button">
+                        <i class="fas fa-chevron-down"></i>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+    </header>
     <!-- Landing section end -->
 
     <!-- Scroll up button -->
