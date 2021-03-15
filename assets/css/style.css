@@ -154,3 +154,22 @@ html {
 .carousel-control-next-icon {
     background-color: black;
 }
+
+/*--------------------------------------------Feedback card*/
+#feedback-card{
+    width: 80vw;
+    margin-left: 10%;
+    margin-top: 5% ;
+    margin-bottom: 5%;
+}
+
+#center-btn{
+align-items: center;
+}
+
+#feedback-btn{
+    border-radius: 25px;
+    background: #163A51;
+    color: #fff;
+
+}
