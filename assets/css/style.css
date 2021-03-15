@@ -176,6 +176,8 @@ align-items: center;
 
 
 /*--------------------------------------------Footer section */
+
+
 .footer-section{
     left: 0;
     bottom: 0;
@@ -183,4 +185,39 @@ align-items: center;
     background-color: #163A51 ;
     color: white;
     text-align: center;
+    padding-top: 5%;
+    margin-bottom: -20px;
+}
+
+.footer-heading{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #ffffff;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #F2B940;
+}
+
+.social-links li{
+    display: inline;
+}
+
+.social-links {
+    padding-bottom: 20px;
 }
