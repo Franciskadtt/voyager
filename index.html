@@ -19,6 +19,13 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
         <!-- CSS style sheet -->
         <link href="assets/css/style.css" rel="stylesheet">
+        <!-- Emial API script -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function() {
+        emailjs.init("user_L39GnOY6eYr9Cr7jVEXqk");
+        })();
+        </script>
         
     </head>
 
@@ -823,33 +830,32 @@
                 <h5 class="card-title">Feedback</h5>
                 <p class="card-text">We would love to hear your thoughts, suggestions, concerns or problems with anything so we can improve!</p>
                 <!-- Form Code from Bootstrap -->
-                <form class="container form-container">
+                <form onsubmit="return sendMail(this);" class="container form-container">
                     <div class="row form-row">
                         <div class="col-md-6 mb-3">
                                 <label for="fname">First name</label>
-                                <input type="text" name="name" id="fname" class="form-control" required="">
+                                <input type="text" name="fname" id="fname" class="form-control" required="">
                         </div>
                         <div class="col-md-6 mb-3">
                                 <label for="lname">Last name</label>
-                                <input type="text" name="name" id="lname" class="form-control" required="">
+                                <input type="text" name="lname" id="lname" class="form-control" required="">
                         </div>
                         </div>
                         <div class="row form-row">
                         <div class="col-12">
                                 <label for="emailaddress">Email</label>
-                                <input type="email" name="email" id="emailaddress" class="form-control" required="">
+                                <input type="email" name="emailaddress"  class="form-control" required="">
                         </div>
                         </div>
                         <div class="row form-row">
                             <div class="col-12">
                                 <label for="textmessage">Message</label>
-                                <input type="text" name="text" id="textmessage" class="form-control" required="">
+                                <textarea rows="5" name="message" class="form-control" id="textmessage" required=""></textarea>
                             </div>
                             <div class="form-row text-center" >
                                     <div class="col contact-btn-container" id="center-btn">
-                                        <button type="submit" class="btn contact-btn" id="feedback-btn">
-                                        Send Message
-                                        </button>
+                                        <button type="submit" class="btn  center-block" id="feedback-btn">Send Message</button>
+                                        
                                     </div>
                             </div>
                     </div>
@@ -873,13 +879,20 @@
             </ul>
     </footer>
     <!-- Footer section end -->  
-<script src="assets/js/script.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChqqn8Ai2JeoWjYRLmo2mdSo8TaTdvHr0&callback=initMap" async></script>
-<script src="assets/js/maps.js"></script>
-<script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
 
+<!-- Scripts --> 
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChqqn8Ai2JeoWjYRLmo2mdSo8TaTdvHr0&callback=initMap" async></script>
+    <script src="assets/js/maps.js"></script>
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+
+    <!-- Email script --> 
+    <script src="assets/js/sendEmail.js"></script>
+    <!-- Email script end--> 
+
+<!-- Scripts end--> 
 
 </body>
 </html>
