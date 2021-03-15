@@ -171,11 +171,11 @@
                             <div class="tab-content" id="pills-tabContent">
                                 <!-- Cooking Kit list with buttons -->
                                 <div class="tab-pane fade show active" id="pills-cooking" role="tabpanel" aria-labelledby="pills-cooking-tab">
-                                    <ul class="list-group">
+                                    <ul class="list-group ">
                                         <li class="list-group-item">Aluminium Foil
                                             <div class="btn-group push-right" role="group" aria-label="Basic example">
                                                 <button type="button" class="btn btn-primary checkItem" data-itemname="Aluminium Foil">Check</button>
-                                                <button type="button" class="btn btn-secondary">Buy</button>
+                                                <button type="button" class="btn btn-secondary to-buy-items" data-buyitemname="Aluminium Foil">Buy</button>
                                             </div>
                                         </li>
                                         <li class="list-group-item">Biodegradable soap
@@ -657,15 +657,10 @@
     <section id="buylist-section"   >
         <h2 class="sections-title">To Buy List</h2>
         <div class="card tab-pane" id="buy-card">
-            <div id="collapse-tobuy" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionPacked">
-                <div class="card-body">
-                    <ul id="to-buy-items" class="list-group">
-                    </ul>
-                </div>
-                </div>
-
-            
-                
+            <div class="card-body">
+                <ul id="buytems" class="list-group">
+                </ul>
+            </div>
         </div>
         
     </section>
@@ -828,28 +823,39 @@
                 <h5 class="card-title">Feedback</h5>
                 <p class="card-text">We would love to hear your thoughts, suggestions, concerns or problems with anything so we can improve!</p>
                 <!-- Form Code from Bootstrap -->
-                <form>
-                    <div class="form-row">
+                <form class="container form-container">
+                    <div class="row form-row">
                         <div class="col-md-6 mb-3">
-                        <label for="validationDefault01">First name</label>
-                        <input type="text" class="form-control" id="validationDefault01"  required>
+                                <label for="fname">First name</label>
+                                <input type="text" name="name" id="fname" class="form-control" required="">
                         </div>
                         <div class="col-md-6 mb-3">
-                        <label for="validationDefault02">Last name</label>
-                        <input type="text" class="form-control" id="validationDefault02" required>
+                                <label for="lname">Last name</label>
+                                <input type="text" name="name" id="lname" class="form-control" required="">
+                        </div>
+                        </div>
+                        <div class="row form-row">
+                        <div class="col-12">
+                                <label for="emailaddress">Email</label>
+                                <input type="email" name="email" id="emailaddress" class="form-control" required="">
+                        </div>
+                        </div>
+                        <div class="row form-row">
+                            <div class="col-12">
+                                <label for="textmessage">Message</label>
+                                <input type="text" name="text" id="textmessage" class="form-control" required="">
+                            </div>
+                        <div class="row form-row">
+                            <div class="col-12">
+                                <div class="contact-btn-container">
+                                    <button type="submit" class="btn contact-btn">Send Message
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <label for="validationDefault03">Email</label>
-                        <input type="email" class="form-control" id="validationDefault03" required>
-                        </div>
-                        <div class="col-12">
-                            <label for="message">Message</label>
-                            <textarea rows="3" name="message" id="message" class="form-control" required=""></textarea>
-                        </div>
-                    </form>
+                </form>
 
-                    <button class="btn btn-primary" type="submit">Submit Feedback</button>
                 
             </div>
         </div>
