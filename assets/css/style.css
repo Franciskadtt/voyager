@@ -126,6 +126,16 @@ html {
     display: none;
 }
 
+/*--------------------------------------------To Buy List Section */
+
+
+
+#buy-card{
+    width: 18rem;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
 
 
 /*--------------------------------------------Google Maps*/
