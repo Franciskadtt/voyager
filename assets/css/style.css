@@ -83,6 +83,14 @@ html {
 .arrow{
     color: #ffffff;
     font-size: xx-large;
+    bottom: 0;
+    left: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -25px; 
+
 }
 
 
