@@ -818,7 +818,7 @@
             </div>
         </div>
         <!-- Feedback Card -->  
-        <div class="card">
+        <div class="card" id="feedback-card">
             <div class="card-body">
                 <h5 class="card-title">Feedback</h5>
                 <p class="card-text">We would love to hear your thoughts, suggestions, concerns or problems with anything so we can improve!</p>
@@ -845,14 +845,13 @@
                                 <label for="textmessage">Message</label>
                                 <input type="text" name="text" id="textmessage" class="form-control" required="">
                             </div>
-                        <div class="row form-row">
-                            <div class="col-12">
-                                <div class="contact-btn-container">
-                                    <button type="submit" class="btn contact-btn">Send Message
-                                    </button>
-                                </div>
+                            <div class="form-row text-center" >
+                                    <div class="col contact-btn-container" id="center-btn">
+                                        <button type="submit" class="btn contact-btn" id="feedback-btn">
+                                        Send Message
+                                        </button>
+                                    </div>
                             </div>
-                        </div>
                     </div>
                 </form>
 
