@@ -40,6 +40,12 @@ h2:after {
     left: 45%
 }
 
+.checklist-headings{
+    font-size: 20px;
+    font-weight: 500;
+    color: #163A51;
+    padding-top: 15%;
+}
 
 
 /*--------------------------------------------Hero Image*/
