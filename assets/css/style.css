@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
+
 }
 
 
@@ -64,10 +64,9 @@ h2:after {
 }
 }
 
-
 .navbar {
     box-shadow: none;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.01);
     top: 0;
     width: 100%;
     transition: top 0.3s;
@@ -84,11 +83,16 @@ h2:after {
 
 .landing-title{
     padding-top: 15%;
-    padding-bottom: 15%;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #0F3346;
 }
 
 .landing-subtitle{
-    padding-top: 15%;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 40px;
 }
 
 .start-btn {
@@ -105,11 +109,10 @@ h2:after {
     color: #ffffff;
     font-size: xx-large;
     bottom: 0;
-    left: 50%;
     cursor: pointer;
     position: absolute;
     bottom: 10px;
-    left: 50%;
+    left: 51%;
     margin-left: -25px; 
 
 }
@@ -118,7 +121,7 @@ h2:after {
 
 .wave-icon{
     font-size: 85px;
-    color: grey;
+    color: #CECECE;
     
 }
 
