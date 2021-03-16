@@ -17,10 +17,31 @@ html {
     text-align: center;
 }
 
-
-.sections-title {
+.text-center {
     text-align: center;
 }
+
+.sections-title {
+    position: relative;
+    font-weight: 300;
+    padding-bottom: 1%;
+    font-size: 30px;
+}
+
+h2:after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 5px;
+    background: #e6b423;
+    left: 0;
+    bottom: 0;
+    border-radius: 999px;
+    left: 45%
+}
+
+
+
 /*--------------------------------------------Hero Image*/
 
 .hero-image {
