@@ -8,16 +8,18 @@ function sendMail(contactForm) {
         "message": contactForm.message.value
     })
     .then(
+        
         function(response) {
             console.log("SUCCESS", response);
         },
         function(error) {
             console.log("FAILED", error);
         }
+        
     );
+    resetForm
     return false;  // To block from loading a new page
-}
+};
 
-
-
-;
+function resetForm() {
+    document.getElementById("newForm").reset()};
