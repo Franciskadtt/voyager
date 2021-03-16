@@ -25,23 +25,49 @@ function topFunction() {
 
 
 
-/** Add Checklist packed function*/
+// Add Checklist packed function
     function markPacked(event){
-        /** If event happens*/
+        // If event happens
         selectedItem = event.target;
-        /** Get element by id*/
+        // Get element by id - where to place target item
         targetList = document.getElementById('packedItems');
-        /** Create new item if selected */
+        // Create new item if selected 
         newItem = ' <li class="list-group-item"> ' + selectedItem.getAttribute("data-itemname") + ' </li>';
-        /** Where new item should be created */
+        // Where new item should be created
         currentPackedList = targetList.innerHTML;
         targetList.innerHTML = currentPackedList + newItem;
-        /** Hide item if selected*/
+        // Hide item if selected
         selectedItem.parentElement.parentElement.classList.add('hideItem');
     }
-    /** Take each element clicked on*/
+    // Take each element clicked on
     items = document.getElementsByClassName('checkItem');
     for (var index = 0; index < items.length; index++) {
         items[index].addEventListener('click', markPacked, false);
     }
+
+
+
+
+
+
+
+// Add Checklist to-buy function
+    function markToBuy (event){
+        // If event happens
+        selectedItem = event.target;
+        // Get element by id
+        targetList = document.getElementById('buyItems');
+        // Create new item if selected 
+        newBuyItem = ' <li class="list-group-item"> ' + selectedItem.getAttribute("data-buyitemname") + ' </li>';
+        // Where new item should be created
+        currentBuyList = targetList.innerHTML;
+        targetList.innerHTML = currentBuyList + newBuyItem;
+    }
+    // Take each element clicked on
+    itemsToBuy = document.getElementsByClassName('to-buy-items');
+    for (var index = 0; index < itemsToBuy.length; index++) {
+        itemsToBuy[index].addEventListener('click', markPacked, false);
+    }
+
+
 
