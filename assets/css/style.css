@@ -192,25 +192,16 @@ h2:after {
     margin-top: 10px;
 }
 
-.anchor-icon {
-    display: none;
+
+/*--------------------------------------------Checklist Intro buttons */
+
+#checklist-intro-btns{
+    text-align: center;
+    justify-content: center;
 }
 
 
-@media (min-width: 990px){
-    .anchor-icon {
-    display: block;
-    font-size: 100px;
-    font-weight: 500;
-    color: rgba(206, 206, 206,0.5);
-    text-align: right;
-    padding-top: 0px;
-    margin-top: -60px;
-}
-}
-
-/*--------------------------------------------Help Btn & Modal */
-
+/*Help Btn & Modal */
 .help-btn{
     color: #fff;
     background-color: #163A51;
@@ -222,6 +213,13 @@ h2:after {
 .help-btn:hover{
     color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/*Reset Btn*/
+.clear-btn{
+    color: #163A51;
+    background-color: #F2B940;
+    border-radius: 50px;
 }
 
 /*--------------------------------------------Check List Scroll */
