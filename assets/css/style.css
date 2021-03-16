@@ -384,20 +384,86 @@ h2:after {
 }
 
 /*--------------------------------------------Review carousel*/
-.carousel-control-prev-icon{
-    background-color: black;
+.review-icon{
+    color: #003348 ;
+    font-size: 30px;
 }
 
-.carousel-control-next-icon {
-    background-color: black;
+.review-icon:hover {
+    color: #8f8f8f;
+}
+
+
+
+.single-box{
+    width: 80vw;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9%;
+
+}
+
+@media (min-width: 990px){
+.single-box{
+    width: 50%;
+    margin-left: 30%;
+    margin-top: 5% ;
+    margin-bottom: 5% ;
+    
+}
+}
+
+@media (min-width: 1400px){
+.single-box{
+    width:50%;
+    margin-left: 30%;
+    margin-top: 5% ;
+    margin-bottom: 5% ;
+    
+}
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.review-quote{
+    color: #003348;
+    font-size: large;
+    padding: 10px;
+}
+
+.img-circle{
+    margin-top: 80px;
+}
+
+.review-heading{
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-size: 38px;
+    color: #003348;
+}
+
+.review-text{
+    font-size: 24px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #003348;
 }
 
 /*--------------------------------------------Feedback card*/
-#feedback-card{
+#feedback-card {
     width: 80vw;
     margin-left: 10%;
     margin-top: 5% ;
-    margin-bottom: 5%;
+    margin-bottom: 5% ;
 }
 
 #center-btn{
@@ -408,7 +474,6 @@ align-items: center;
     border-radius: 25px;
     background: #163A51;
     color: #fff;
-
 }
 
 

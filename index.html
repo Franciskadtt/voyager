@@ -738,7 +738,7 @@
                                 <div id="map-info">
                                     <!-- Store 1 section --> 
                                     <div class="store downersails">
-                                        <h2>Downer Sails</h2>
+                                        <h2 class="map-store-heading">Downer Sails</h2>
                                         <p> The Sail Loft, Crofton Avenue, Dun Laoghaire, Co Dublin, Ireland</p>   
                                         <p>T: +353 1 280 4286</p>
                                         <p>E: sails@downersails.ie</p>
@@ -747,7 +747,7 @@
                                     <!-- Store 1 section end --> 
                                     <!-- Store 2 section --> 
                                     <div class="store marinesuppliers">
-                                        <h2>Marine Suppliers and Company Ltd</h2>
+                                        <h2 class="map-store-heading">Marine Suppliers and Company Ltd</h2>
                                         <p> 12A West Pier, Howth, Co. Dublin, Ireland</p>   
                                         <p>T: +353 1 832 4214 / +353 1 832 5835</p>
                                         <p>E: sales@marinesuppliers.ie</p>
@@ -756,7 +756,7 @@
                                     <!-- Store 2 section end -->
                                     <!-- Store 3 section --> 
                                     <div class="store trespass">
-                                        <h2>Trespass</h2>
+                                        <h2 class="map-store-heading">Trespass</h2>
                                         <p> Unit 201, Dun Laoghaire Shopping Centre, Co Dublin, Ireland</p>   
                                         <p>T: +353 1 280 0808 </p>
                                         <p>E: shop@trespass.ie</p>
@@ -765,7 +765,7 @@
                                     <!-- Store 3 section end -->
                                     <!-- Store 4 section --> 
                                     <div class="store vikingmarine">
-                                        <h2>Viking Marine</h2>
+                                        <h2 class="map-store-heading">Viking Marine</h2>
                                         <p> The Pavilion, Dun Laoghaire, Co Dublin,, Ireland</p>   
                                         <p>T: +353 1 280 6654  </p>
                                         <p>E: sales@vikingmarine.ie</p>
@@ -791,78 +791,61 @@
                 <h2 class="sections-title">What others say</h2>
             </hgroup>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="single-box card">
-                                            <div class="card-body">
-                                                <blockquote>
-                                                    “Found this tool super useful as I have everything in one place”
-                                                </blockquote>
-                                                <img src="assets/images/review_logo.png">
-                                                <h3>Simone H.</h3>
-                                                <p class="card-text">Cape Town</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="single-box card">
-                                            <div class="card-body">
-                                            <blockquote>“I use Voyager the ‘Find a store’ function quite a lot and find it easy to use”</blockquote>
-                                            <img src="assets/images/review_logo.png"></div>
-                                            <div class="img-text">
-                                                <h2>Niel D.</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="single-box card">
-                                            <div class="card-body">
-                                                <blockquote>“Voyager is a great way to remember what you need to pack even if you are a not new to sailing ”</blockquote>
-                                                <img src="assets/images/review_logo.png">
-                                            </div>
-                                            <div class="img-text">
-                                                <h2>Albert D.</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+        <div id="carouselExampleControlsNoTouching" class="carousel slide container" data-touch="false" data-interval="false">
+            <div class="carousel-inner row">
+                <div class="carousel-item active">
+                    <div class="single-box card">
+                        <div class="card-body">
+                            <blockquote class="review-quote">“Found this tool super useful as I have everything in one place”
+                            </blockquote>
+                            <div class="img-circle">
+                                <img class="logo2" src="assets/images/review_logo.png">
                             </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="single-box card">
-                                            <div class="card-body">
-                                                <blockquote>“I always have Voyager with me when a plan a new voyage”</blockquote>
-                                            <img src="assets/images/review_logo.png">
-                                                </div>
-                                            <div class="img-text">
-                                                <h2>John D.</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
+                            <h3 class="review-heading">Simone H.</h3>
+                            <p class="review-text">South Africa</p>
                         </div>
+                    </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="carousel-item">
+                    <div class="single-box card">
+                        <div class="card-body">
+                            <blockquote class="review-quote">“I use Voyager the ‘Find a store’ function quite a lot and find it easy to use”
+                            </blockquote>
+                            <div class="img-circle">
+                                <img class="logo2" src="assets/images/review_logo.png">
+                            </div>
+                            
+                            <h3 class="review-heading">Niel D.</h3>
+                            <p class="review-text">Ireland</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="single-box card">
+                        <div class="card-body">
+                            <blockquote class="review-quote">“Voyager is a great way to remember what you need to pack even if you are a not new to sailing ”
+                            </blockquote>
+                            <div class="img-circle">
+                                <img class="logo2" src="assets/images/review_logo.png">
+                            </div>
+                            
+                            <h3 class="review-heading">Sonette H.</h3>
+                            <p class="review-text">South Africa</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleControlsNoTouching" role="button" data-slide="prev">
+                <span > <i class="fas fa-chevron-left review-icon"></i></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControlsNoTouching" role="button" data-slide="next">
+                <span > <i class="fas fa-chevron-right review-icon"></i></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
+
         <!-- Feedback Card -->  
         <div class="card" id="feedback-card">
             <div class="card-body">
