@@ -114,18 +114,25 @@
             </hgroup>
         </div>
 
+        
         <!-- Voyage info -->
-        <form>
-            <div class="form-group">
-                <label for="formGroupVoyageInput">Type Voyage Name</label>
-                <input type="text" class="form-control" id="formGroupVoyagenameInput" >
+        <div class="container">
+            <div class="row" id="voyage-info"> 
+                    <form class="col-12 col-lg-6">
+                        <label for="formGroupVoyageInput" class="vgr-label">Type Voyage Name</label>
+                        <input type="text" class="form-control" id="formGroupVoyagenameInput" >
+                    </form>
+                    <form class="col-12 col-lg-6">
+                        <label for="formGroupDepartureInput" class="vgr-label">Departure Point</label>
+                        <input type="text" class="form-control" id="formGroupDepartureInput" >
+                    </form>
             </div>
-            <div class="form-group">
-                <label for="formGroupDepartureInput">Departure Point</label>
-                <input type="text" class="form-control" id="formGroupDepartureInput" >
-            </div>
-        </form>
+        </div>
         <!-- Voyage info end -->
+
+        <div class="anchor-icon" >
+                <i class="fas fa-anchor"></i>
+            </div>
 
         <!-- Guideline Button and Modal -->
         <!-- Button trigger modal - orignally from Bootstrap with modifications for project-->
