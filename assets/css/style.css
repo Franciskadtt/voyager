@@ -5,6 +5,10 @@ body{
 
 }
 
+section {
+    margin-top: 80px ;
+}
+
 
 /* original code credit: https://css-tricks.com/snippets/jquery/smooth-scrolling/*/
 html {
@@ -44,7 +48,7 @@ h2:after {
     font-size: 20px;
     font-weight: 500;
     color: #163A51;
-    padding-top: 15%;
+    padding-top: 50px;
 }
 
 
@@ -143,7 +147,7 @@ h2:after {
 #wave2{
     padding-bottom: 40px;
     padding-top: 35px;
-    margin-bottom: 20%;
+    margin-bottom: 100px;
     margin-right: -10px;
 }
 
@@ -337,6 +341,38 @@ h2:after {
     margin-top: 5%;
 }
 
+/*--------------------------------------------Find a Store Section*/
+
+.store-container{
+    max-width: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center ;
+    align-items: center;
+}
+
+.online-wrapper{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.store-text{
+    text-align: center;
+}
+
+.shop-row{
+    justify-content: center ;
+    align-items: center;
+}
+
+.btn-store{
+    color: #fff;
+    background-color:#163A51;
+    border: 2px solid #163A51;
+    border-radius: 50px;
+    
+}
+    
 
 
 /*--------------------------------------------Google Maps*/
@@ -395,6 +431,7 @@ align-items: center;
     padding-bottom: 10px;
 }
 
+/* orginal code from Code Institute Rosie Project */
 .social-links li a i {
     width: 32px;
     height: 32px;
