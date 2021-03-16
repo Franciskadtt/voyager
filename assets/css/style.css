@@ -114,6 +114,36 @@ h2:after {
 
 }
 
+/*--------------------------------------------About Section*/
+
+.wave-icon{
+    font-size: 85px;
+    color: grey;
+    
+}
+
+#wave1{
+    margin-left: -10px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+#wave2{
+    text-align: right;
+    padding-bottom: 40px;
+    padding-top: 35px;
+    margin-bottom: 20%;
+    margin-right: -10px;
+}
+
+.p-wrapper{
+    max-width: 1000px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 10px;
+}
 
 /*--------------------------------------------Scroll up button*/
 #scrollButton {
