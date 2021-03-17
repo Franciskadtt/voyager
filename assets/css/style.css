@@ -232,6 +232,18 @@ h2:after {
     border-radius: 50px;
 }
 
+/*--------------------------------------------Help Modal*/
+
+#wave3{
+    text-align: left;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+#modal-p{
+    text-align: left;
+}
+
 /*--------------------------------------------Checklist Section*/
 
 .checklist-container {
