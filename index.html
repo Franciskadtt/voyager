@@ -687,14 +687,14 @@
 
 
     <!-- Buy List section --> 
-    <section id="buylist-section"   >
-        <div class="title section-underline">
-            <hgroup class="text-center">
+    <section id="buylist-section" class="container"  >
+        <div class="row title section-underline">
+            <hgroup class="col text-center">
                 <h2 class="sections-title">To Buy List</h2>
             </hgroup>
         </div>
-        <div class="card tab-pane" id="buy-card">
-            <div class="card-body">
+        <div class="row card tab-pane" id="buy-card">
+            <div class="col card-body">
                 <ul id="buyItems" class="list-group">
                 </ul>
             </div>
@@ -853,7 +853,7 @@
                 <h5 class="card-title">Feedback</h5>
                 <p class="card-text">We would love to hear your thoughts, suggestions, concerns or problems with anything so we can improve!</p>
                 <!-- Form Code from Bootstrap -->
-                <form onsubmit="return sendMail(this);" class="container form-container">
+                <form onsubmit="return sendMail(this);" class="container form-container" id="newForm">
                     <div class="row form-row">
                         <div class="col-md-6 mb-3">
                                 <label for="fname">First name</label>

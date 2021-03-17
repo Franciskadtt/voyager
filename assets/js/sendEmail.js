@@ -21,5 +21,9 @@ function sendMail(contactForm) {
     return false;  // To block from loading a new page
 };
 
-function resetForm() {
-    document.getElementById("newForm").reset()};
+//Listen for click of "send message" button and execute alert
+document.getElementById("feedback-btn").addEventListener("click", reviewMessage);
+// function for alert for feedback form
+function reviewMessage (){
+    alert("Thanks for your feedback")   
+}
