@@ -27,3 +27,10 @@ document.getElementById("feedback-btn").addEventListener("click", reviewMessage)
 function reviewMessage (){
     alert("Thanks for your feedback")   
 }
+
+// Listen for click of "send message" button and execute 
+document.getElementById("feedback-btn").addEventListener("click", resetForm)
+
+// function reset form
+function resetForm() {
+    document.getElementById("newForm").reset()};
