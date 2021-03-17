@@ -354,6 +354,20 @@ h2:after {
     text-align: left;
 }
 
+/*--------------------------------------------Boat Icon */
+.boat-icon{
+    text-align: center;
+}
+
+@media (min-width: 990px){
+.boat-icon{
+    display:none;
+}
+
+}
+
+
+
 /*--------------------------------------------To Buy List Section */
 
 #buy-card{
