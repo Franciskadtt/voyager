@@ -391,9 +391,12 @@ h2:after {
     background-color:#163A51;
     border: 2px solid #163A51;
     border-radius: 50px;
-    
 }
-    
+
+.btn-store:hover {
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
 
 
 /*--------------------------------------------Google Maps*/
