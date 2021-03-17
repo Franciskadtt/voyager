@@ -27,7 +27,7 @@ function topFunction() {
 
 // Add Checklist packed function
     function markPacked(event){
-        // If event happens
+        // Get the element that triggered a specific event
         selectedItem = event.target;
         // Get element by id - where to place target item
         targetList = document.getElementById('packedItems');
@@ -53,7 +53,7 @@ function topFunction() {
 
 // Add Checklist to-buy function
     function markToBuy (event){
-        // If event happens
+        // Get the element that triggered a specific event
         selectedItem = event.target;
         // Get element by id
         targetList = document.getElementById('buyItems');
