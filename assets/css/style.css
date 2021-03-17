@@ -256,7 +256,7 @@ h2:after {
 /*Categories*/
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #41C9C0;
+    background-color: #163A51;
 }
 
 .nav-link {
@@ -343,9 +343,18 @@ h2:after {
     display: none;
 }
 
+/*--------------------------------------------Packed Section */
+
+#packed-card{
+    height: 600px;
+}
+
+
+#packed-body{
+    text-align: left;
+}
+
 /*--------------------------------------------To Buy List Section */
-
-
 
 #buy-card{
     width: 18rem;
