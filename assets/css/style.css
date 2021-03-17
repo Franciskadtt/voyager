@@ -490,8 +490,9 @@ h2:after {
     margin-bottom: 5% ;
 }
 
-#center-btn{
-align-items: center;
+.form-row{
+    justify-content: center ;
+    align-items: center;
 }
 
 #feedback-btn{
