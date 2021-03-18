@@ -25,7 +25,7 @@ function topFunction() {
 
 
 
-// Add Checklist packed function
+// Add Checklist Packed function
     function markPacked(event){
         // Get the element that triggered a specific event
         selectedItem = event.target;
@@ -45,28 +45,24 @@ function topFunction() {
         items[index].addEventListener('click', markPacked, false);
     }
 
-
-
-
-
-
-
 // Add Checklist to-buy function
     function markToBuy (event){
         // Get the element that triggered a specific event
         selectedItem = event.target;
         // Get element by id
-        targetList = document.getElementById('buyItems');
+        targetList = document.getElementById('toBuyItems');
         // Create new item if selected 
-        newBuyItem = ' <li class="list-group-item"> ' + selectedItem.getAttribute("data-buyitemname") + ' </li>';
+        newBuyItem = ' <li class="list-group-item">  <div role="group" aria-label="Checklist Buttons"> <button type="button" onClick="markPacked(event);" class="btn btn-check checkItem" data-itemname="' + selectedItem.getAttribute("data-buyitemname") + '">Check</button> </div> ' + selectedItem.getAttribute("data-buyitemname") + '</li>';
         // Where new item should be created
         currentBuyList = targetList.innerHTML;
         targetList.innerHTML = currentBuyList + newBuyItem;
+        // Hide item if selected
+        selectedItem.parentElement.parentElement.classList.add('hideItem');
     }
     // Take each element clicked on
     itemsToBuy = document.getElementsByClassName('to-buy-items');
     for (var index = 0; index < itemsToBuy.length; index++) {
-        itemsToBuy[index].addEventListener('click', markPacked, false);
+        itemsToBuy[index].addEventListener('click', markToBuy, false);
     }
 
 
