@@ -421,6 +421,11 @@ h2:after {
     width: 100%;
 }
 
+/* To hide store info */
+.hide{
+    display: none;
+    }
+
 /*--------------------------------------------Review carousel*/
 .review-icon{
     color: #003348 ;
