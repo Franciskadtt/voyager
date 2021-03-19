@@ -3,11 +3,12 @@
 body{
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    color: #003348;
 
 }
 
 section {
-    margin-top: 80px ;
+    margin-top: 40px ;
 }
 
 
@@ -31,6 +32,7 @@ html {
     font-weight: 300;
     padding-bottom: 1%;
     font-size: 30px;
+    color: #003348;
 }
 
 h2:after {
@@ -140,34 +142,83 @@ h2:after {
 
 /*--------------------------------------------About Section*/
 
-.wave-icon{
-    font-size: 85px;
-    color: #CECECE;
-    
+#about-section{
+    margin-bottom: 10%;
 }
+
+#about-icon-container{
+    padding-top: 10%;
+}
+
+.wave-icon{
+    font-size: 45px;
+    color: #CECECE;
+}
+
+@media (min-width: 900px){
+.wave-icon{
+    font-size: 75px;
+}}
+
 
 #wave1{
     text-align: right;
     margin-left: -10px;
-    padding-top: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 5%;
+
 }
 
 #wave2{
-    padding-bottom: 40px;
-    padding-top: 35px;
-    margin-bottom: 100px;
+    text-align: left;
     margin-right: -10px;
+    padding-top: 160px;
+    
 }
 
-.p-wrapper{
-    
+.about-row{
     text-align: center;
-    justify-content: center;
+}
+
+
+.p-wrapper{
+    text-align: left;
     padding-left: 7%;
     padding-right: 7%;
-    padding-top: 10px;
+    padding-top: 25px;
+    color: #003348;
+    font-size: 14px;
 }
+
+@media (min-width: 900px){
+.p-wrapper{
+    font-size: 17px;
+}}
+
+.icon-row{
+    text-align: center;
+}
+
+.about-icon {
+    font-size: 25px;
+    color: #41C9C0;
+}
+@media (min-width: 900px){
+.about-icon{
+    font-size: 35px;
+}}
+
+
+.icon-p{
+    padding-top: 20px;
+    font-weight: 500;
+    color:#003348 ;
+    font-size: 12px;
+}
+
+@media (min-width: 900px){
+.icon-p{
+    font-size: 15px;
+}}
 
 /*--------------------------------------------Scroll up button*/
 #scrollButton {
