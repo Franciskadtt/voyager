@@ -78,18 +78,16 @@ h2:after {
     display: none;
 }}
 
-
-
 .navbar {
     box-shadow: none;
     background-color: rgba(0, 0, 0, 0);
     top: 0;
     width: 100%;
     transition: top 0.3s;
+    font-weight: 400;
 }
-
-.navbar-right{
-    margin-left:-10px;
+.navbar-left{
+    margin-right: 20px;
 }
 
 
@@ -125,6 +123,10 @@ h2:after {
     padding-left: 20%;
 }
 
+#start-btn-f {
+    font-size: 15px;
+    font-weight: 500;
+}
 
 .arrow{
     color: #ffffff;
@@ -135,10 +137,7 @@ h2:after {
     bottom: 10px;
     left: 51%;
     margin-left: -25px; 
-
 }
-
-
 
 /*--------------------------------------------About Section*/
 
