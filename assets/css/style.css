@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 
 }
 
@@ -346,12 +347,26 @@ h2:after {
 /*--------------------------------------------Packed Section */
 
 #packed-card{
-    height: 600px;
+    height: 645px;
 }
 
 
 #packed-body{
     text-align: left;
+}
+
+/*--------------------------------------------To Buy Section */
+
+#buy-card{
+    height: 645px;
+}
+
+#buy-body{
+    text-align: left;
+}
+
+.btn-position{
+    display:inline-block;
 }
 
 /*--------------------------------------------Boat Icon */
@@ -368,13 +383,7 @@ h2:after {
 
 
 
-/*--------------------------------------------To Buy List Section */
 
-#buy-card{
-    width: 18rem;
-    margin-left: 5%;
-    margin-top: 5%;
-}
 
 /*--------------------------------------------Find a Store Section*/
 
