@@ -77,12 +77,17 @@ h2:after {
 }}
 
 
+
 .navbar {
     box-shadow: none;
     background-color: rgba(0, 0, 0, 0);
     top: 0;
     width: 100%;
     transition: top 0.3s;
+}
+
+.navbar-right{
+    margin-left:-10px;
 }
 
 
