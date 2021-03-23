@@ -495,7 +495,13 @@ h2:after {
 /*--------------------------------------------Packed Section */
 
 #packed-card{
-    height: 645px;
+    height: 400px;
+}
+
+@media (min-width: 990px){
+#packed-card{
+    height: 600px;
+}
 }
 
 
@@ -506,7 +512,13 @@ h2:after {
 /*--------------------------------------------To Buy Section */
 
 #buy-card{
-    height: 645px;
+    height: 400px;
+}
+
+@media (min-width: 990px){
+#buy-card{
+    height: 600px;
+}
 }
 
 #buy-body{
