@@ -596,6 +596,35 @@ h2:after {
     display: none;
     }
 
+.store{
+    padding-top: 20px ;
+    padding-left: 10px; 
+    margin-top: 20px;
+    text-align: left;
+    justify-content: left ;
+    align-items: left;
+    
+}
+
+@media (min-width: 990px){
+.store{
+    margin-top: 125px;
+}
+}
+
+.btn-store-info{
+    color: #ffffff;
+    background-color:#003348;
+    border: 2px solid #003348;
+    border-radius: 10px;
+}
+
+.btn-store-info:hover {
+    color: #003348;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
 /*--------------------------------------------Review carousel*/
 
 #reviews-section{
