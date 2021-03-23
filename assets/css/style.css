@@ -58,7 +58,7 @@ h2:after {
 /*--------------------------------------------Hero Image*/
 
 .hero-image {
-    background-position: center;
+    background-position: 71%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -203,7 +203,7 @@ h2:after {
 }
 @media (min-width: 900px){
 .about-icon{
-    font-size: 35px;
+    font-size: 45px;
 }}
 
 
@@ -246,6 +246,24 @@ h2:after {
 .scrollup-arrow{
     font-size: 20px;
 }
+
+/*--------------------------------------------Circle */
+.circle {
+    width: 100px;
+    height:  100px;
+    background: #F2B940;
+    border-radius: 50%;
+    float: right;
+    margin-right: -35px;
+    
+}
+
+@media (min-width: 900px){
+.circle {
+    width: 150px;
+    height:  150px;
+}}
+
 
 /*--------------------------------------------Check List intro */
 
@@ -304,6 +322,14 @@ h2:after {
 }
 
 /*--------------------------------------------Checklist Section*/
+
+
+#checklist-section{
+    background-color: #f0f1f2;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
 
 .checklist-container {
     max-width: none;
@@ -440,6 +466,11 @@ h2:after {
 
 /*--------------------------------------------Find a Store Section*/
 
+#store-section{
+    padding-bottom: 20px;
+}
+
+
 .store-container{
     max-width: none;
     padding-left: 5%;
@@ -490,6 +521,13 @@ h2:after {
     }
 
 /*--------------------------------------------Review carousel*/
+
+#reviews-section{
+    background-color: #f0f1f2;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
 .review-icon{
     color: #003348 ;
     font-size: 30px;
