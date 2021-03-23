@@ -127,8 +127,7 @@ function deleteCheck(e) {
         owmItem.markPacked();
     }
 }
-
-//Function to delete own item
-function removeOwnItem () {
-    ownItem.remove()
-        }
+    //Function to delete own item
+    function removeOwnItem () {
+        ownItem.remove()
+            }
