@@ -392,6 +392,40 @@ h2:after {
 }
 
 
+
+/*Check List Scroll */
+.tab-pane{
+    height: 550px;
+    overflow-y: scroll;
+}
+
+.list-group-item{
+    cursor: pointer;
+}
+
+.hideItem{
+    display: none;
+}
+
+/*--------------------------------------------Own List*/
+
+/* Style own items input form*/
+.own-list-form{
+    display: flex;
+    min-height: 15vh;
+    justify-content: center;
+    align-items: center;  
+}
+
+.ownItemLabel{
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.item-input{
+    width: 50%;
+}
+
 /*Own Items*/
 .own-list-form{
     padding: 5px 15px;
@@ -413,19 +447,49 @@ h2:after {
     border-radius: 50px;
 }
 
-
-/*--------------------------------------------Check List Scroll */
-.tab-pane{
-    height: 550px;
-    overflow-y: scroll;
+/* Container with new own items */
+/*orginal code with modifications from https://medium.com/@suryashakti1999/to-do-list-app-using-javascript-for-absolute-beginners-13ea9e38a033*/
+.ownlist-item{
+    margin: 5px auto;
+    background: white;
+    color: #003348;
+    display: flex;
+    font-size: 16px;
+    padding: 0.3rem;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    list-style: none;
 }
 
-.list-group-item{
+.ownlist-item li {
+    flex: 1;
+}
+
+/* Style delete for own items list  */ 
+.delete_btn{
+    padding: 5px;
+    background: #8f8f8f;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 10px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-.hideItem{
-    display: none;
+.delete_btn:hover {
+    background: #003348;
+}
+
+.fa-trash{
+    pointer-events: none;
+}
+
+/* Delete own item animation*/
+.disappear{
+    transform: translateY(10rem) scale(0.4) rotateZ(5deg);
+    opacity: 0;
 }
 
 /*--------------------------------------------Packed Section */

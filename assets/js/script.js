@@ -65,5 +65,70 @@ function topFunction() {
         itemsToBuy[index].addEventListener('click', markToBuy, false);
     }
 
+// Add Own List
+/* orginal code with modifications from https://medium.com/@suryashakti1999/to-do-list-app-using-javascript-for-absolute-beginners-13ea9e38a033 */
 
+    //Selectors and get Elements
+    let ownInput = document.getElementById('formOwnInput');
+    let ownAddButton = document.querySelector('.btn-add-own');
+    let ownList = document.getElementById('ownItems');
+    //Event listeners
+    ownAddButton.addEventListener("click", addOwnItem)
+    ownList.addEventListener("click", deleteCheck)
+    ownList.addEventListener("click", checkOwnButton)
 
+    //Function to add new items
+    function addOwnItem(event) {
+        event.preventDefault();
+        //Add own list Div
+        var ownListDiv = document.createElement('div');
+        ownListDiv.classList.add('ownlist-item');
+        //Add own list item
+        var newOwnList = document.createElement('li');
+        newOwnList.innerText = ownInput.value;
+        newOwnList.classList.add('own-list-item');
+        ownListDiv.appendChild(newOwnList);
+        if(ownInput.value === ""){
+            return null
+        }
+        //Add Check Button
+        var checkOwnButton = document.createElement('button');
+        checkOwnButton.innerHTML = 'Check';
+        checkOwnButton.classList.add('btn', 'btn-check', 'checkItem')
+        ownListDiv.appendChild(checkOwnButton);
+        //Add Buy Button
+        var checkOwnButton = document.createElement('button');
+        checkOwnButton.innerHTML = 'Buy';
+        checkOwnButton.classList.add('btn', 'btn-buy', 'to-buy-items')
+        ownListDiv.appendChild(checkOwnButton);
+        //Add Delete Buttons
+        var deleteButton = document.createElement('button');
+        deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
+        deleteButton.classList.add('delete_btn')
+        ownListDiv.appendChild(deleteButton);
+        //Append to Actual LIST
+        ownList.appendChild(ownListDiv);
+        //Clear own item input VALUE
+        ownInput.value = ""
+    }
+
+//Function what happens if click on delete button
+function deleteCheck(e) {
+    var item = e.target;
+    //Delete
+    if (item.classList[0] === "delete_btn") {
+        var ownItem = item.parentElement;
+        //Animation for delete item
+        ownItem.classList.add("disappear")
+        ownItem.addEventListener('transitionend', removeOwnItem)
+    }
+    //Check Item
+    if (item.classList[0] === "checkItem") {
+        owmItem.markPacked();
+    }
+}
+
+//Function to delete own item
+function removeOwnItem () {
+    ownItem.remove()
+        }

@@ -13,7 +13,7 @@ function sendMail(contactForm) {
             console.log("SUCCESS", response);
             //display message to user if succesful
             reviewMessage ();
-            //reser form
+            //reset form
             resetForm();
         },
         function(error) {
