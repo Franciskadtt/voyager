@@ -1,5 +1,7 @@
 # Voyager
 
+[View live version of website via GitHub Pages](https://franciskadtt.github.io/voyager/)
+
 A sailing voyage needs some planning even for an experienced sailor. Voyager is a checklist for Sailors to pack & plan before they set off on an overnight voyage. 
 
 #### The main goals of this site 
@@ -135,7 +137,47 @@ Social Icons - Allows the user to access the social platforms that the designer 
 
 ## Testing - to be done
 
-## Deployment - to be done
+## Deployment
+
+This project was developed using the [Gitpod IDE](https://www.gitpod.io/), committed to git and pushed to GitHub using the built in function within Gitpod.
+
+To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/Franciskadtt/voyager), the following steps were taken:
+
+#### Log into GitHub.
+1. From the list of repositories on the screen, select **Franciskadtt/franciskadutoit**.
+2. From the menu items near the top of the page, select **Settings**.
+3. Scroll down to the **GitHub Pages** section.
+4. Under **Source** click the drop-down menu labelled **None**  and select **Master Branch**.
+5. On selecting Master Branch the page is automatically refreshed, the website is now deployed.
+6. Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed website.
+7. At the moment of submitting this Milestone project the Development Branch and Master Branch are identical.
+
+### How to run this project locally
+To clone this project into Gitpod you will need:
+
+1. A Github account. Create a Github account [here](https://github.com/)
+2. Use the Chrome browser
+
+Then follow these steps:
+
+1. Install the Gitpod Browser Extentions for [Chrome](https://www.gitpod.io/docs/browser-extension/)
+2. After installation, restart the browser
+3. Log into [Gitpod](https://www.gitpod.io/) with your gitpod account.
+4. Navigate to the [Project GitHub repository](https://github.com/Franciskadtt/voyager)
+5. Click the green "Gitpod" button in the top right corner of the respository
+6. This will trigger a new gitpod workspace to be created from the code in github where you can work locally.
+
+To work on the project code within a local IDE:
+
+1. Follow this link to the [Project GitHub repository](https://github.com/Franciskadtt/voyager).
+2. Under the code button, click "Clone" or "Dowload Zip".
+3. In the Clone with HTTPs section, copy the clone URL for the repository.
+4. In your local IDE open the terminal.
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type git clone, and then paste the URL you copied in Step 3.
+7. Press Enter. Your local clone will be created.
+
+At the moment of submitting this Milestone project the Development Branch and Master Branch are identical.
 
 ## Credits - to be done
 
