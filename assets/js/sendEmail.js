@@ -23,13 +23,13 @@ function sendMail(contactForm) {
     );
     // To block from loading a new page
     return false;  
-};
+}
 
 // function for alert for feedback form
 function reviewMessage (){
-    alert("Thanks for your feedback")   
+    alert("Thanks for your feedback");   
 }
 
 // function reset form
 function resetForm() {
-    document.getElementById("newForm").reset()};
+    document.getElementById("newForm").reset();}
