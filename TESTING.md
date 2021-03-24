@@ -78,9 +78,42 @@ Email script file:
 #### Fix:
 
 ### Manual testing of all elements and functionality on every page
-#### Landing Section
-#### About Section
-#### Checklist Section
-#### Store Section
-#### Review Section
-#### Footer Section
+1. Landing Section
+    1. Go to the "Landing" page from a desktop.
+    2. Change the screen size from desktop to mobile to verify that the navigation bar is responsive and switches from in line menu to burger icon dropdown menu at the appropriate place.
+    3. Reduce the width of the window to confirm that the image have correct focus for mobile and tablet.
+    4. Hover over the start button and verify if you hover over it, a shadow appears as expected.
+    5. Click on start button which scrolls down to the Checklist section.
+    6. Hover over the down arrow and verify if you hover over it, it moves as expected.
+    7. Click on down arrow which scrolls down to the About section.
+2. About Section
+    1. Click on scroll up button which scrolls up to the Landing Section.
+3. Checklist Section
+    1. Reduce the width of the window to confirm that the text boxed moves below each other for mobile and tablet view.
+    2. Type in "Voyage Name" text box.
+    3. Type in "Departure Point" text box.
+    4. Click on "Show me the Ropes" and modal opens. 
+    5. Click on "x" in modal to close modal.
+    6. Click on all "check" buttons in each category and all items move to "Already packed" list.
+    7. Click on all "buy" buttons in each category and all items move to "To Buy list".
+    8. Click on "check" buttons for items in "To Buy" list and all items move to "Already Packed" list.
+    9. Click on "Own Items" category and type in text in input field. Click on "+" button and new item is added to the "Own list" category.
+    10. Click on delete button in "Own List" category and item is deleted from that list.
+    11. Still to test "check" and buy" buttons if user adds own item in "Own Items" List.
+    12. Click on "Clear the Decks" to refresh page and page resets and removes all typed info in boxes and resets checklist.
+    13. Click on scroll up button which scrolls up to the Landing Section.
+4. Store Section
+    1. Hover over the store item link and verify if you hover over it, the colour change works as expected.
+    2. Click on each store link and verify that the correct store site is opened in a new tab.
+    3. Refresh page several times to ensure Google maps is displaying correctly with the correct map markers.
+    4. Click on each map marker and verify that on click the store infomation card displays.
+    5. Resize page to verify the store information card displays below the Google Map for mpbile and tablet.
+5. Review Section
+    1. Click on carousel arrows to move back and forth and verify it slides as expected.
+    2. Try to submit the empty form and verify that an error message about the required fields appears
+    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
+    4.  Reduce and expand width of window to verify that the form display behaves and centres the way expected, and that it looks good on all device widths.
+6. Footer Section
+    1. Verify all social media links go to social media pages - issue with LinkeIn link 
+
+## Further testing: 
