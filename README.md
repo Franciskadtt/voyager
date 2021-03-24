@@ -168,7 +168,9 @@ Social Icons - Allows the user to access the social platforms that the designer 
 - [TestProject](https://testproject.io/)
     - For automated testing of website
 
-## Testing - to be done
+## Testing 
+
+Testing information can be found in separate [TESTING.md file](TESTING.md)
 
 ## Deployment
 
