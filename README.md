@@ -56,59 +56,52 @@ This website is a tool for users interested in planning and pack for a day or an
 - [Desktop](assets/wireframes/desktop_wireframe.png)
 
 ## Features
-- One page site with 6 sections: Home, About, Checklist, Find a Store, Reviews and Footer section
+- One page site with 6 sections: Landing, About, Checklist, Find a Store, Reviews and Footer section
 - There is a mobile-first focus and therefore I wanted to keep in mind first what will work on mobile. 
 
 ### Nav bar
-1. Logo - if clicked/ tapped - return to Home section
+1. Logo - if clicked/ tapped - return to Landing section
 2. Mobile & Tablet - User can tap hamburger icon to open menu with above 6 sections
 3. Desktop - Nav bar extended and user can see page sections.
-4. Nav bar - If click/tap on Logo - go to Home Section.
+4. Nav bar - If click/tap on Logo - go to Landing Section.
 5. Nav bar - If click/tap on About - go to About Section.
 6. Nav bar - If click/tap on Checklist - go to Checklist Section.
-7. Nav bar - If click/tap on Find a Store - go to Find a Store  Section.
+7. Nav bar - If click/tap on Find a Store - go to Find a Store Section.
 8. Nav bar - If click/tap on Reviews - go to Reviews Section.
 9. Nav bar - If click/tap on Footer - go to Footer Section.
 
-### Home Section / Landing Page
-1. User can click/tap on start button to go directly to the Checklist section
-2. User can click/tap on chevron (downarrow) to go to About section
+### Landing Section
+1. User can click/tap on start button to go directly to the Checklist section.
+2. User can click/tap on chevron (downarrow) to go to About section.
 
 ### About Section
 1. Paragraph giving some background about the website for the user.
+2. Icons with summary of main features.
 
 ### Checklist Section
 1. The user can enter the voyage name in the box.
 2. The user can enter the departure point name in the box.
 3. If user click/tap on “Show Me The Ropes” then a modal displays with instructions. In the Instructions box, there is a “X” which the user can tap to exit the modal and return to the main screen.
 5. If user clicks/taps on the “Clear The Decks” button, then all the values are cleared below.
-6. List of categories in unordered list. If the user click/tap arrow, the list expands. If the user click/tap category in list, list of items for that category will display below in “Items” list. If a category is not selected, the category items will be hidden. Number of items for that category is displayed next to it.
-7. List of items linked to a category in unordered list. Only show max 6 items. User can scroll down to view more items.
-8. If the user click/tap on item, the item moves to “Done” container the background colour changes and a checkmark display.
+6. List of categories in a list. If the user click/tap category in list, list of items for that category will display below in “Items” list. If a category is not selected, the category items will be hidden.
+7. List of items linked to a category will only display max 6 items. User can scroll down to view more items.
+8. If the user click/tap on "check" button, the item moves to “Already Packed” list and is removed from items list.
 9. Option where user can add own item in the box. If user click on garbage icon, item is removed.
-10. List of “Done” items - Display check icon with heading next to it “Items packed” and counter of number of items in “Done” list. Display percentage  completed.  List all items clicked/tapped above. If listed here background colour changes and a checkmark display.
-11. Local storage & session storage
-
-### Still to pack & buy Section
-1. Items appear here still if it still needs to be packed / purchased - list items here if not selected above. All items in the dropdown list, do not display if user clicked/ tapped above.
-2. Items appear here if box was ticked in the Checklist section
-3. User can enter number in “Qty” box
-4. User can enter a number in “Estimated cost”
-5. If user click/tap on “Calculate” -> Sum of all Qty items
-6. If user click/tap on “Calculate” -> Sum of Estimate Cost item
-7. Email list - email icon, if user click/tap on icon - modal opens to display info to email options (API)
+10. If the user click/tap on "buy" button, the item moves to “To Buy” list. If user have packed it, they can select the "Check" button. The item moves to “Already Packed” list and is removed from items list.
 
 ### Find a store
-1. Display stores on Google Maps (API) with map markers
-2. List of links to online stores - if user click/tap on box - new page open with company website
+1. List of links to online stores - if user click/tap on box - new page open with company website.
+2. Display stores on Google Maps (API) with map markers.
+3. If user click/taps on markers, store information displays.
 
 ### Reviews
-1. Have a carousel with cards. Can click on arrows to toggle left or right
-2. If hover over review card, card stand out
-3. Add success message for form on contact page
+1. Have a carousel with cards. Can click on arrows to toggle left or right.
+2. Have a contact form where user can give feedback of website.
+3. Success message if the feedback form submitted successfully.
+4. Clear form if message submitted successfully.
 
 ### Footer
-1. Social links - click/tap on social icons to open new page to social media pages
+1. Social links - click/tap on social icons to open new page to social media pages.
  
 ### Existing Features
 #### Header
