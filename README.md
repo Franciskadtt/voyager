@@ -32,14 +32,15 @@ This website is a tool for users interested in planning and pack for a day or an
 - Gain insights from users what they need from the tool
 
 ### User Stories
-- Beginner to Intermediate sailor who wants to have guidance what to pack for a day trip
-- A Sailor that wants to make sure they have remembered all items to pack
-- A Sailor that wants to be able to list items they need to still buy
-- A Sailor that wants to print a list to take to a store
-- A Sailor that wants to share a list to pack or buy with friends / shipmates
-- A Sailor that wants to be able to calculate the estimate cost of items
-- A Sailor that wants to be able see the number of outstanding items
-- A Sailor that wants to be able to find a sailing store to buy items (either physical or online)
+* As a beginner to intermediate sailor, I want to have guidance on what to pack for a day/overnight trip.
+* As a sailor, I want to make sure that I have remembered all the items to be packed by using a checklist
+* As a user if I have packed an item on the list, I want to be able to check it off the list.
+* As a sailor, I want to be able to list items I still need to buy 
+* As a user if I have bought an item on the list, I want to be able to check it off the list.
+* As a sailor, I want to be able to find a sailing store to buy items (either physical or online).
+* As a user, I want to be able to see reviews from other users.
+* As a user, I want to be able to share my own feedback regarding the checklist
+* As a user, I want to be able to follow or connect with the creator of the site on social media
 
 ### Wireframe mockups
 #### Low Fidelity:
