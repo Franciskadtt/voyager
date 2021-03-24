@@ -20,11 +20,11 @@ This website is a tool for users interested in planning and pack for a day or an
 
 ### What are the goals & needs of the user?
 - Have a high level view of the what needs to be done and able to tick items off a list
-- To see number and name items that are already packed
-- To how many items still needs to be packed or purchased
-- To calculate estimate cost of items
-- To share list of items 
+- To see the items that needs to be packed or bought
+- To see the items that are already packed
+- To see the items that they need to buy
 - Easily find information on sailing stores (online or physical stores)
+- To trust the application by reading reviews from other users
 
 ### What are the goals & needs of the business?
 - Be the “go to” planning and checklist tool for users going on a sailing voyage 
