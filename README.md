@@ -134,6 +134,39 @@ Social Icons - Allows the user to access the social platforms that the designer 
 - Add reCAPTCHA security function in form - will need further skills to implement this feature
 
 ## Technologies Used
+- This project uses HTML, CSS and Javascript programming languages
+- [Gitpod](https://www.gitpod.io/) - This developer used **Gitpod** for their IDE while building the website.
+- [Popper.js](https://popper.js.org/)
+    - The project uses **Popper,js** reference Javascript needed for the responsive navbar
+- [BootstrapCDN](https://www.bootstrapcdn.com/)
+    - The project uses **Bootstrap4** to simplify the structure of the website and help make the website responsive easy to do.
+    - The project also uses BootstrapCDN to provide icons from [FontAwesome](https://www.bootstrapcdn.com/fontawesome/)
+- [Google Fonts](https://fonts.google.com/)
+    - The project uses **Google fonts** to style the website fonts.
+- [jQuery](https://jquery.com/)
+    - The project uses **jQuery** to reference Javascript needed for the responsive navbar,
+- [Hover.css CDN](https://cdnjs.com/libraries/hover.css/2.1.0)
+    - The project uses **Hover.css** to apply hover effects to the projects navbar.
+- [Github](https://github.com/)
+    - The project uses **Github** for hosting and version control.
+- [Responsinator](http://www.responsinator.com/)
+    - The project used **Responsinator** to determine if the site was responsive of various devices.
+- [Am I Responsive](http://ami.responsivedesign.is/#)
+    - The project used **Am I Resopnsive** to view images of website on different devices if the site was responsive of various devices.
+- Chrome DevTools
+    - For this project, the web developer tools built directly into the Google Chrome browser was used to help edit pages and diagnose problems quickly.
+- [W3C Markup Validator](https://validator.w3.org/)
+    - For testing HTML code
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+    - For testing CSS code
+- [JSHint Validator](https://jshint.com/)
+    - For detecting errors and potential problems in your JavaScript code
+- [Link Checker](https://validator.w3.org/checklink)
+    - For checking all links on website and see if all links work
+- Lighthouse in Google dev tool
+    - For testing the performance of the website
+- [TestProject](https://testproject.io/)
+    - For automated testing of website
 
 ## Testing - to be done
 
