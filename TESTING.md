@@ -5,6 +5,16 @@
 [View website in GitHub Pages](https://franciskadtt.github.io/voyager/)
 
 ### Testing client stories from UX section
+1. As a beginner to intermediate sailor, I want to have guidance on what to pack for a day/overnight trip.
+2. As a sailor, I want to make sure that I have remembered all the items to be packed by using a checklist
+3. As a user if I have packed an item on the list, I want to be able to check it off the list.
+4. As a sailor, I want to be able to list items I still need to buy 
+5. As a user if I have bought an item on the list, I want to be able to check it off the list.
+6. As a sailor, I want to be able to find a sailing store to buy items (either physical or online).
+7. As a user, I want to be able to see reviews from other users.
+8. As a user, I want to be able to share my own feedback regarding the checklist
+9. As a user, I want to be able to follow or connect with the creator of the site on social media
+
 
 ### Automated testing of website
 [TestProject](https://testproject.io/)
