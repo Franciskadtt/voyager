@@ -6,14 +6,14 @@ A sailing voyage needs some planning even for an experienced sailor. Voyager is 
 
 #### The main goals of this site 
 - To be a guideline for sailors so they can know what items to pack on a sailing overnight voyage.
-- To be a checklist for sailors that is customisable and sharable. 
-- To be a tool that can show sailors the quantity of items to buy and the calculate their estimated cost.
+- To be a checklist for sailors that is customisable. 
+- To be a tool that can show sailors the items to buy.
 - To help people find a sailing store either online or physical store, to purchase the things they need for their voyage.
 
 ## UX
 
 ### User Persona
-This website is a tool for users interested in planning and pack for a day or an overnight sailing trip including beginner to intermediate sailors and people going on a sailing trip. The users want to use this tool as a guide on what to pack but also have a high level view on what needs to be done before they go on a voyage. The users are comfortable with using technology and would like to share information about the trip. 
+This website is a tool for users interested in planning and pack for a day or an overnight sailing trip including beginner to intermediate sailors and people going on a sailing trip. The users want to use this tool as a guide on what to pack but also have a high level view on what needs to be done before they go on a voyage. The users are comfortable with using technology. 
 
 ### Who are we building it for?
 - People planning a day or overnight sailing trip.
