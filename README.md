@@ -123,9 +123,10 @@ This website is a tool for users interested in planning and pack for a day or an
 Social Icons - Allows the user to access the social platforms that the designer & creator of the website uses.
 
 ### Features Left to Implement
-- A unique environment for the user where they can sign in with a user name and password so that their information can be saved across devices - will need further skills to implement this feature
-- A feature to store documents related to a voyage - will need further skills to implement this feature
-- Add reCAPTCHA security function in form - will need further skills to implement this feature
+- A unique environment for the user where they can sign in with a user name and password so that their information can be saved across devices - will need further skills to implement this feature.
+- A feature to store documents related to a voyage - will need further skills to implement this feature.
+- Add reCAPTCHA security function in form - will need further skills to implement this feature.
+- FAQ section with an accordion to view answers - Gives potential clients easy to find answers to their common questions.
 
 ## Technologies Used
 - This project uses HTML, CSS and Javascript programming languages
