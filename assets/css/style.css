@@ -32,7 +32,7 @@ html {
     font-weight: 300;
     padding-bottom: 1%;
     font-size: 30px;
-    color: #003348;
+    color: #163a51;
 }
 
 h2:after {
@@ -376,17 +376,17 @@ h2:after {
 
 /*Buy Btn*/
 .btn-buy {
-    color: #F7B045;
+    color: #25837E;
     background-color:#fff;
-    border: 2px solid #F7B045;
+    border: 2px solid #25837E;
     border-radius: 50px;
     padding: 5px 15px;
     
 }
 .btn-buy:hover {
     color: #fff;
-    background-color:#F7B045;
-    border: 2px solid #F7B045;
+    background-color:#25837E;
+    border: 2px solid #25837E;
     border-radius: 50px;
 }
 
