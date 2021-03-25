@@ -20,11 +20,12 @@
 [TestProject](https://testproject.io/)
 - To test website functionailites
 #### Result:
-Test 1
-Found 2 issues:
-Carousel for reviews does not work
-Link to LinkedIn showed 404 error
+1. Test 1 - Found 2 issues:
+* Carousel for reviews does not work
+* Link to LinkedIn showed 404 error
 #### Fix: 
+* Update link for Linkedin
+* Fix carousel by using bootstrap code
 
 
 [Link Checker](https://validator.w3.org/checklink)
@@ -35,6 +36,8 @@ Some of the links to this resource point to broken URI fragments-  Lines: 12, 3
 Broken fragments:
 * https://franciskadtt.github.io/voyager/#landing-section (lines 39, 54)
 #### Fix: 
+* Update link for Linkedin
+* Add id for landing section
 
 Lighthouse (Google dev tool)
 - To test accesibility and performance of website.
@@ -48,6 +51,7 @@ Mobile - attach report
 #### Result:
 Carousel issue on some wider /landscape devices
 #### Fix:
+* Fix carousel by using bootstrap code to ensure responsive
 
 [Am I Responsive](http://ami.responsivedesign.is/)
 - To view images of website on different devices - insert image
