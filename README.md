@@ -29,6 +29,8 @@ A sailing voyage needs some planning even for an experienced sailor. Voyager is 
         * [Colours](#colours)
         * [Logo](#logo)
 * [Wireframes](#wireframes)
+    *[Low Fidelity](#low-fidelity)
+    *[Medium Fidelity](#medium-fidelity)
 * [Features](#features)
     * [Existing Features](#existing-features)
     * [Features to be implemented](#features-to-be-implemented)
@@ -137,9 +139,10 @@ First I created a basic wireframe for mobile, for tablet and desktop.
 For my website I have decided to go for a 1 page website which suits more with the current trends. 
 The website will be easy to navigate by using the navigation bar or by scrolling down the page. I have included a scroll-up button for user convenience. 
 
-Wireframe images:
 <a></a>
-#### **Low Fidelity**
+### Wireframe images:
+<a></a>
+#### Low Fidelity
 - [Landing Page Section](assets/wireframes/landing_page.png)
 - [About Section](assets/wireframes/about_section.png)
 - [Checklist Section](assets/wireframes/checklist_section.png)
@@ -148,11 +151,12 @@ Wireframe images:
 - [Review Section](assets/wireframes/review section.png)
 
 <a></a>
-#### **Medium Fidelity**
+#### Medium Fidelity
 - [Mobile & Tablet](assets/wireframes/mobile_tablet_mf-wireframe.png)
 - [Desktop](assets/wireframes/desktop_mf-wireframe.png)
 
-## Features
+<a></a>
+## **Features**
 - One page site with 6 sections: Landing, About, Checklist, Find a Store, Reviews and Footer section
 - There is a mobile-first focus and therefore I wanted to keep in mind first what will work on mobile. 
 
@@ -200,7 +204,8 @@ Wireframe images:
 ### Footer
 1. Social links - click/tap on social icons to open new page to social media pages.
  
-### Existing Features
+<a></a>
+### **Existing Features**
 #### Header
 - Logo - Allows the user to easily recognise the brand of “Voyage”. If the user clicks on the logo, it will return the users to the “Home” section as they would expect.
 - Navigation Bar - Allows the user to easily navigate the website's sections and find what they are looking for with ease and speed.
@@ -217,28 +222,42 @@ Wireframe images:
 - Review Section - Allow user to see other users’ feedback and how they used it. It also allows the user to give their own feedback.
 
 #### Footer 
-Social Icons - Allows the user to access the social platforms that the designer & creator of the website uses.
+- Social Icons - Allows the user to access the social platforms that the designer & creator of the website uses.
 
-### Features Left to Implement
+<a></a>
+### **Features to be implemented**
 - A unique environment for the user where they can sign in with a user name and password so that their information can be saved across devices - will need further skills to implement this feature.
 - A feature to store documents related to a voyage - will need further skills to implement this feature.
 - Add reCAPTCHA security function in form - will need further skills to implement this feature.
 - FAQ section with an accordion to view answers - Gives potential clients easy to find answers to their common questions.
 
-## Technologies Used
+<a></a>
+## **Technologies used**
+<a></a>
+### **Languages**
 - This project uses HTML, CSS and Javascript programming languages
-- [Gitpod](https://www.gitpod.io/) - This developer used **Gitpod** for their IDE while building the website.
-- [Popper.js](https://popper.js.org/)
-    - The project uses **Popper,js** reference Javascript needed for the responsive navbar
-- [BootstrapCDN](https://www.bootstrapcdn.com/)
+
+<a></a>
+### **Libraries & Frameworks**
+- [Bootstrap](https://www.bootstrapcdn.com/)
     - The project uses **Bootstrap4** to simplify the structure of the website and help make the website responsive easy to do.
-    - The project also uses BootstrapCDN to provide icons from [FontAwesome](https://www.bootstrapcdn.com/fontawesome/)
+- [Font Awesome](https://fontawesome.com/)
+    - The project uses Fontawesome for the icons
 - [Google Fonts](https://fonts.google.com/)
     - The project uses **Google fonts** to style the website fonts.
 - [jQuery](https://jquery.com/)
     - The project uses **jQuery** to reference Javascript needed for the responsive navbar,
-- [Hover.css CDN](https://cdnjs.com/libraries/hover.css/2.1.0)
+- [Hover.css](https://cdnjs.com/libraries/hover.css/2.1.0)
     - The project uses **Hover.css** to apply hover effects to the projects navbar.
+- [Popper.js](https://popper.js.org/)
+    - The project uses **Popper,js** reference Javascript needed for the responsive navbar
+- [Emailjs API](https://www.emailjs.com/)
+    - The project uses an API from **Emailjs** for the contact form.
+- [Google Maps API](https://developers.google.com/maps)
+    - The project uses an API from **Google** for the map interaction and map markers
+
+### **Tools**
+- [Gitpod](https://www.gitpod.io/) - This developer used **Gitpod** for their IDE while building the website.
 - [Github](https://github.com/)
     - The project uses **Github** for hosting and version control.
 - [Responsinator](http://www.responsinator.com/)
@@ -260,11 +279,14 @@ Social Icons - Allows the user to access the social platforms that the designer 
 - [TestProject](https://testproject.io/)
     - For automated testing of website
 
-## Testing 
+
+<a></a>
+## **Testing**
 
 Testing information can be found in separate [TESTING.md file](TESTING.md)
 
-## Deployment
+<a></a>
+## **Deployment**
 
 This project was developed using the [Gitpod IDE](https://www.gitpod.io/), committed to git and pushed to GitHub using the built in function within Gitpod.
 
@@ -306,11 +328,28 @@ To work on the project code within a local IDE:
 
 At the moment of submitting this Milestone project the Development Branch and Master Branch are identical.
 
-## Credits - to be done
+<a></a>
+## **Credits - to be completed**
 
 ### Content
 - The copy and text for this website was created by Franciska Du Toit
 
 ### Media 
+- Images used are from [Canva](https://www.canva.com/ "Canva")
+
+### Code
+- HTML for the navbar and form originally taken from Bootstrap with modifications for this project.
+- HTML for the help modal originally taken from Bootstrap with modifications for this project.
+- HTML for the Categories & Items headings feature from Bootstrap with modifications for this project.
+- HMTL for the Quote Carousel from Bootstrap with modifications for this project.
+- CSS for smooth scroll from https://css-tricks.com/snippets/jquery/smooth-scrolling/*/ 
+- CSS for own list items from https://medium.com/@suryashakti1999/to-do-list-app-using-javascript-for-absolute-beginners-13ea9e38a033*/
+- CSS for social links from Code Institute Rosie Project
+- JS for scroll up function from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp with modifications for project.
+- JS for own list item add from https://medium.com/@suryashakti1999/to-do-list-app-using-javascript-for-absolute-beginners-13ea9e38a033 with modifications for the project.
+- JS for display of store card from https://stackoverflow.com/questions/22270664/how-to-remove-a-class-from-elements-in-pure-javascript with modifications for the project.
+- JS for map markers on map from https://developers.google.com/maps/documentation/javascript/marker-clustering#maps_marker_clustering-javascript with modifications for the project.
+
 
 ### Acknowledgements
+- Thanks my mentor Antonio Rodriquez for guiding me throughout this project. He helped me to brainstorm about how the layout would work best. He gave me excellent support escpecially with JavaScript and talking me through the logic of my code.
