@@ -75,7 +75,7 @@ I used [Accessible Colors](https://accessible-colors.com/ "Accessible Colors") t
 #### Logo
 I designed the logo using an icon from [Canva](https://www.canva.com/ "Canva")
 
-![Logo](assets/images/voyager-logo-design.png)
+![Logo](assets/wireframes/voyager-logo-design.png)
 
 
 ### Wireframe mockups
