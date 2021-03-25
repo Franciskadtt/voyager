@@ -52,7 +52,7 @@ function topFunction() {
         // Get element by id
         var targetList = document.getElementById('toBuyItems');
         // Create new item if selected 
-        var newBuyItem = ' <li class="list-group-item">  <div role="group" aria-label="Checklist Buttons" class="btn-position"> <button type="button" onClick="markPacked(event);" class="btn btn-check checkItem" data-itemname="' + selectedItem.getAttribute("data-buyitemname") + '">Check</button> </div> ' + selectedItem.getAttribute("data-buyitemname") + '</li>';
+        var newBuyItem = ' <li class="list-group-item">  <div role="group" aria-label="Checklist Buttons" class="btn-position"> <button type="button" onClick="markPacked(event);" class="btn btn-check checkItem" data-itemname="' + selectedItem.getAttribute("data-buyitemname") + '"><i class="fas fa-check"></i></button> </div> ' + selectedItem.getAttribute("data-buyitemname") + '</li>';
         // Where new item should be created
         var currentBuyList = targetList.innerHTML;
         targetList.innerHTML = currentBuyList + newBuyItem;
