@@ -42,6 +42,42 @@ This website is a tool for users interested in planning and pack for a day or an
 * As a user, I want to be able to share my own feedback regarding the checklist
 * As a user, I want to be able to follow or connect with the creator of the site on social media
 
+<a></a>
+### **Design**
+As the central theme of the website is sailing, I made all my design choices based on nautical colours & elements.
+I researched images and websites of boats, sailing and yachts to get inspiration for the colour scheme.
+
+<a></a>
+#### Fonts
+I used [Google Fonts](https://fonts.google.com/ "Google Fonts") to explore the various options.
+For the overall content I have decided to use the [Roboto](https://fonts.google.com/specimen/Roboto?preview.text_type=custom") Google fonts: Roboto") font. This font is modern and easily readable.
+
+<a></a>
+#### Icons
+I used icons from [Font Awesome library](https://fontawesome.com/ "Font Awesome"). The icons that was used were are all nautical themed or used to give meaning to certain section.
+
+<a></a>
+#### Colours
+The colour scheme is based on nautical and sailing colours. I wanted it to feel modern and clean. I used [Coolors](https://coolors.co/ "Coolors.co") to map out my colour scheme.
+
+Colour Palette:
+![Color Palette](assets/wireframes/colour-palette-voyager.png)
+
+* #163A51: This dark blue colour is the primary colour for all headings and text. It is also the background of the main call to actions, check buttons and footer background.
+* #F7B045: This is a yellow orange colour used as an accent colour inlcluding the start button, the buy buttons and the clear/reset button.
+* #2FA59E: This is a sea green used minimally as a secondary colour for the icons in the About section.
+* #F0F1F2: This is a off white/grey colour used for background blocks to break the website into sections. 
+* #AAAAA: This is a light grey colour used for special icons. 
+
+I used [Accessible Colors](https://accessible-colors.com/ "Accessible Colors") to make sure the colours in the design is at least AA compliant.
+
+<a></a>
+#### Logo
+I designed the logo using an icon from [Canva](https://www.canva.com/ "Canva")
+
+![Logo](assets/images/voyager-logo-design.png)
+
+
 ### Wireframe mockups
 #### Low Fidelity:
 - [Landing Page Section](assets/wireframes/landing_page.png)
