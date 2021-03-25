@@ -1,4 +1,4 @@
-# Voyager
+# **Voyager**
 
 ![Mokeup image](assets/wireframes/voyager-mockup.png)
 
@@ -6,21 +6,53 @@
 
 A sailing voyage needs some planning even for an experienced sailor. Voyager is a checklist for Sailors to pack & plan before they set off on an overnight voyage. 
 
-#### The main goals of this site 
+## **Goal for this project** 
 - To be a guideline for sailors so they can know what items to pack on a sailing overnight voyage.
 - To be a checklist for sailors that is customisable. 
 - To be a tool that can show sailors the items to buy.
 - To help people find a sailing store either online or physical store, to purchase the things they need for their voyage.
 
-## UX
+<a></a>
+## Table of contents 
+* [UX](#ux)
+    * [User Persona](#user-persona)
+    * [Who](#who)
+    * [User Goals](#user-goals) 
+    * [Site Owners Goals](#site-owners-goals) 
+    * [User Stories](#user-stories)
+    * [User Requirements and Expectations](#user-requirements-and-expectations)
+        * [Requirements](#requirements)
+        * [Expectations](#expectations)
+    * [Design](#design)
+        * [Fonts](#fonts)
+        * [Icons](#icons)
+        * [Colours](#colours)
+        * [Logo](#logo)
+* [Wireframes](#wireframes)
+* [Features](#features)
+    * [Existing Features](#existing-features)
+    * [Features to be implemented](#features-to-be-implemented)
+* [Technologies used](#technologies-used)
+    * [Languages](#languages)
+    * [Tools and Libraries](#tools-and-libraries)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
 
-### User Persona
+<a name="ux"></a>
+## **UX**
+
+<a></a>
+### **User Persona**
 This website is a tool for users interested in planning and pack for a day or an overnight sailing trip including beginner to intermediate sailors and people going on a sailing trip. The users want to use this tool as a guide on what to pack but also have a high level view on what needs to be done before they go on a voyage. The users are comfortable with using technology. 
 
-### Who are we building it for?
+<a></a>
+### **Who**
+Who are we building this website for?
 - People planning a day or overnight sailing trip.
 
-### What are the goals & needs of the user?
+<a></a>
+### **User Goals**
 - Have a high level view of the what needs to be done and able to tick items off a list
 - To see the items that needs to be packed or bought
 - To see the items that are already packed
@@ -28,12 +60,14 @@ This website is a tool for users interested in planning and pack for a day or an
 - Easily find information on sailing stores (online or physical stores)
 - To trust the application by reading reviews from other users
 
-### What are the goals & needs of the business?
+<a></a>
+### **Site Owners Goals**
 - Be the “go to” planning and checklist tool for users going on a sailing voyage 
 - Help users find sailing stores
 - Gain insights from users what they need from the tool
 
-### User Stories
+<a></a>
+### **User Stories**
 * As a beginner to intermediate sailor, I want to have guidance on what to pack for a day/overnight trip.
 * As a sailor, I want to make sure that I have remembered all the items to be packed by using a checklist
 * As a user if I have packed an item on the list, I want to be able to check it off the list.
@@ -43,6 +77,23 @@ This website is a tool for users interested in planning and pack for a day or an
 * As a user, I want to be able to see reviews from other users.
 * As a user, I want to be able to share my own feedback regarding the checklist
 * As a user, I want to be able to follow or connect with the creator of the site on social media
+
+<a></a>
+### **User Requirements and Expectations**
+<a></a>
+#### Requirements
+* Easy to navigate by using the navigation menu.
+* Relevant content in checklist for a sailing voyage.
+* Appealing visual elements.
+* Easy way to contact site owner for suggestions.
+
+<a></a>
+#### Expectations
+* When clicking on links (store and social media links), expect the page to open in a seperate browser.
+* Expect feedback when submitting the contact form that the form has been submitted correctly.
+* Expect that the navigation links work properly to take the user where they intended to go to.
+* Expect items to be move from one list to another (either packed or to buy)
+* Clear map of physical stores.
 
 <a></a>
 ### **Design**
@@ -89,7 +140,7 @@ I designed the logo using an icon from [Canva](https://www.canva.com/ "Canva")
 - [Find a Store Section](assets/wireframes/find_a_store_section.png)
 - [Review Section](assets/wireframes/review section.png)
 
-#### High Fidelity:
+#### Medium Fidelity:
 - [Mobile & Tablet](assets/wireframes/mobile_tablet_wireframe.png)
 - [Desktop](assets/wireframes/desktop_wireframe.png)
 
