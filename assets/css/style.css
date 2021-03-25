@@ -684,9 +684,10 @@ h2:after {
 }
 
 .review-quote{
-    color: #003348;
+    color: #fff;
     font-size: large;
-    padding: 10px;
+    
+    
 }
 
 .img-circle{
@@ -694,18 +695,11 @@ h2:after {
 }
 
 .review-heading{
-    padding-top: 50px;
     text-transform: uppercase;
-    font-size: 38px;
-    color: #003348;
+    font-size: 15px;
+    color: #fff;
 }
 
-.review-text{
-    font-size: 24px;
-    font-weight: 200;
-    text-transform: uppercase;
-    color: #003348;
-}
 
 /*--------------------------------------------Feedback card*/
 #feedback-card {
@@ -722,7 +716,7 @@ h2:after {
 
 #feedback-btn{
     border-radius: 25px;
-    background: #163A51;
+    background: #163a51;
     color: #fff;
 }
 
