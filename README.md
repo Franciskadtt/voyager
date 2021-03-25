@@ -130,9 +130,16 @@ I designed the logo using an icon from [Canva](https://www.canva.com/ "Canva")
 
 ![Logo](assets/wireframes/voyager-logo-design.png)
 
+<a></a>
+## **Wireframes**
+I have used [Balsamic](https://balsamiq.com/wireframes/) to create low-fidelity wireframes and used [AdobeXD](https://www.adobe.com/ie/products/xd.html) to create medium-fidelity wireframes.
+First I created a basic wireframe for mobile, for tablet and desktop. 
+For my website I have decided to go for a 1 page website which suits more with the current trends. 
+The website will be easy to navigate by using the navigation bar or by scrolling down the page. I have included a scroll-up button for user convenience. 
 
-### Wireframe mockups
-#### Low Fidelity:
+Wireframe images:
+<a></a>
+#### **Low Fidelity**
 - [Landing Page Section](assets/wireframes/landing_page.png)
 - [About Section](assets/wireframes/about_section.png)
 - [Checklist Section](assets/wireframes/checklist_section.png)
@@ -140,9 +147,10 @@ I designed the logo using an icon from [Canva](https://www.canva.com/ "Canva")
 - [Find a Store Section](assets/wireframes/find_a_store_section.png)
 - [Review Section](assets/wireframes/review section.png)
 
-#### Medium Fidelity:
-- [Mobile & Tablet](assets/wireframes/mobile_tablet_wireframe.png)
-- [Desktop](assets/wireframes/desktop_wireframe.png)
+<a></a>
+#### **Medium Fidelity**
+- [Mobile & Tablet](assets/wireframes/mobile_tablet_mf-wireframe.png)
+- [Desktop](assets/wireframes/desktop_mf-wireframe.png)
 
 ## Features
 - One page site with 6 sections: Landing, About, Checklist, Find a Store, Reviews and Footer section
