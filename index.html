@@ -20,8 +20,8 @@
         <!-- CSS style sheet -->
         <link href="assets/css/style.css" rel="stylesheet">
         <!-- Emial API script -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-        <script type="text/javascript">
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script >
         (function() {
         emailjs.init("user_L39GnOY6eYr9Cr7jVEXqk");
         })();
@@ -193,7 +193,7 @@
                 </div>
                 <div class="col-12">
                     <!-- Button to reset selections -->
-                    <button class="btn clear-btn" type="button" onclick="history.go(0)" value="Refresh" href="javascript:history.go(0)"> Clear the decks</button>
+                    <input class="btn clear-btn" type="button" onclick="history.go(0)" value="Clear the decks" href="javascript:history.go(0)">
                     <!-- Button to reset selections end -->
                 </div>
             </div>
