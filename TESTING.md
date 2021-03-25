@@ -78,8 +78,19 @@ Email script file:
 [W3C Markup Validation](https://validator.w3.org/)
 - To validate HTML code
 #### Result:
-- 7 errors and 2 warnings to be fixed
+1. Warning: The type attribute is unnecessary for JavaScript resources (2 scripts)
+2. Error: Attribute href not allowed on element button at this point.
+3. Error: An img element must have an alt attribute, except under certain conditions. (3 images)
+4. Error: The value of the for attribute of the label element must be the ID of a non-hidden form control.
+5. Error : The aria-describedby attribute must point to an element in the same document.
 #### Fix:
+1. Fix warning 1 = Remove 'type' attribute from scripts
+2. Fix warning 2 = Change 'button' tag to 'input' tag
+3. Add alt attributes to 3 carousel images
+4. Add identical for and id elements for label and input fields
+5. Remove aria-describedby attribute
+
+
 
 ### Manual testing of all elements and functionality on every page
 1. Landing Section
