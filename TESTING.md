@@ -71,9 +71,17 @@ Email script file:
 [W3C CSS validation](https://jigsaw.w3.org/css-validator/)
 - To validate CCS code
 #### Result:
-- 1 error to fix - with store class
-- 21 warnings to fix with btn classes around colour 
+1. Error: left is not a align-items value.
+2. Warning: Same colour background and border for check button.
+3. Warning: Same colour background and border for buy button.
+4. Warning: Same colour background and border for add-own button.
+5. Warning: Same colour background and border for store links.
+6. Warning: Same colour background and border for store-info button.
+7. Warning: unknown vendors for transition style.
 #### Fix:
+1. Fix Error: remove align-items.
+2. Fix Warnings for background and border colour: Remove border color.
+3.  Fix Warning for unknown vendors: Remove vendon extensions.
 
 [W3C Markup Validation](https://validator.w3.org/)
 - To validate HTML code
