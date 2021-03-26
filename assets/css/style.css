@@ -670,6 +670,9 @@ h2:after {
     background: #163a51;
     color: #fff;
 }
+#feedback-title{
+    text-align: center;
+}
 
 /*--------------------------------------------Footer section */
 
