@@ -48,10 +48,17 @@ To check that all links are working and not broken.
 
 ### Lighthouse (Google dev tool)
 To test accesibility and performance of website.
+#### Desktop
 * **Result**
-    1. Desktop - attach report
-    2. Mobile - attach report
+    1. Links to cross-origin destinations are unsafe.
+    2. Slow loading time for website.
+    3. Np Accessibility for achor tags.
 * **Fix** 
+    1. Add rel="noopener noreferrer" to any external links to improve performance and prevent security vulnerabilities.
+    2. Optimise images with TinyPNG.
+    3. Add aria label to anchor tags.
+
+#### Mobile
 
 ### [Responsinator](http://www.responsinator.com/)
 To test responsiveness of live website and functionalities on different size mobile devices.
