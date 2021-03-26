@@ -54,7 +54,6 @@ h2:after {
     padding-top: 50px;
 }
 
-
 /*--------------------------------------------Hero Image*/
 
 .hero-image {
@@ -185,12 +184,12 @@ h2:after {
     padding-right: 7%;
     padding-top: 25px;
     color: #003348;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 @media (min-width: 900px){
 .p-wrapper{
-    font-size: 17px;
+    font-size: 18px;
 }}
 
 .icon-row{
@@ -210,7 +209,7 @@ h2:after {
     padding-top: 20px;
     font-weight: 500;
     color:#003348 ;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 @media (min-width: 900px){
@@ -553,6 +552,11 @@ h2:after {
 
 .store-text{
     text-align: center;
+    font-size: 25px;
+}
+
+.store-p{
+    font-size: 17px;
 }
 
 .shop-row{
