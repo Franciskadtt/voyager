@@ -29,8 +29,6 @@ A sailing voyage needs some planning even for an experienced sailor. Voyager is 
         * [Colours](#colours)
         * [Logo](#logo)
 * [Wireframes](#wireframes)
-    *[Low Fidelity](#low-fidelity)
-    *[Medium Fidelity](#medium-fidelity)
 * [Features](#features)
     * [Existing Features](#existing-features)
     * [Features to be implemented](#features-to-be-implemented)
@@ -141,7 +139,6 @@ The website will be easy to navigate by using the navigation bar or by scrolling
 
 <a></a>
 ### Wireframe images:
-<a></a>
 #### Low Fidelity
 - [Landing Page Section](assets/wireframes/landing_page.png)
 - [About Section](assets/wireframes/about_section.png)
@@ -150,7 +147,6 @@ The website will be easy to navigate by using the navigation bar or by scrolling
 - [Find a Store Section](assets/wireframes/find_a_store_section.png)
 - [Review Section](assets/wireframes/review section.png)
 
-<a></a>
 #### Medium Fidelity
 - [Mobile & Tablet](assets/wireframes/mobile_tablet_mf-wireframe.png)
 - [Desktop](assets/wireframes/desktop_mf-wireframe.png)
