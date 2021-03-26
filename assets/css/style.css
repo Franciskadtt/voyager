@@ -211,7 +211,7 @@ h2:after {
     padding-top: 20px;
     font-weight: 500;
     color:#003348 ;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 @media (min-width: 900px){
@@ -628,7 +628,7 @@ h2:after {
 
 .review-quote{
     color: #fff;
-    font-size: small;
+    font-size: 13px;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
