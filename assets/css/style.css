@@ -369,10 +369,8 @@ h2:after {
 .btn-check:hover {
     color: #fff;
     background-color:#163A51;;
-    border: 2px solid #163A51;;
     border-radius: 50px;
 }
-
 
 /*Buy Btn*/
 .btn-buy {
@@ -386,11 +384,8 @@ h2:after {
 .btn-buy:hover {
     color: #fff;
     background-color:#25837E;
-    border: 2px solid #25837E;
     border-radius: 50px;
 }
-
-
 
 /*Check List Scroll */
 .tab-pane{
@@ -434,7 +429,6 @@ h2:after {
 .btn-add-own{
     color: #fff;
     background-color:#41C9C0;
-    border: 2px solid #41C9C0;
     border-radius: 50px;
     padding: 5px 10px;
 }
@@ -571,7 +565,6 @@ h2:after {
 .btn-store{
     color: #ffffff;
     background-color:#003348;
-    border: 2px solid #003348;
     border-radius: 10px;
 }
 
@@ -580,7 +573,6 @@ h2:after {
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
-
 
 /*--------------------------------------------Google Maps*/
 
@@ -601,8 +593,6 @@ h2:after {
     margin-top: 20px;
     text-align: left;
     justify-content: left ;
-    align-items: left;
-    
 }
 
 @media (min-width: 990px){
@@ -614,7 +604,6 @@ h2:after {
 .btn-store-info{
     color: #ffffff;
     background-color:#003348;
-    border: 2px solid #003348;
     border-radius: 10px;
 }
 
@@ -682,9 +671,7 @@ h2:after {
     color: #fff;
 }
 
-
 /*--------------------------------------------Footer section */
-
 
 .footer-section{
     left: 0;
@@ -714,9 +701,6 @@ h2:after {
     color: #ffffff;
     background: #8f8f8f;
     transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
 }
 
 .social-links li a i:hover {
