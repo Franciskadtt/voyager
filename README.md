@@ -274,7 +274,8 @@ The website will be easy to navigate by using the navigation bar or by scrolling
     - For testing the performance of the website
 - [TestProject](https://testproject.io/)
     - For automated testing of website
-
+- [TinyPNG](https://tinypng.com/)
+    - To optimise images for website loading time.
 
 <a></a>
 ## **Testing**
