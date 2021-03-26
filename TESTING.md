@@ -52,11 +52,13 @@ To test accesibility and performance of website.
 * **Result**
     1. Links to cross-origin destinations are unsafe.
     2. Slow loading time for website.
-    3. Np Accessibility for achor tags.
+    3. No Accessibility for achor tags.
+    4. Heading elements are not in a sequentially-descending order.
 * **Fix** 
     1. Add rel="noopener noreferrer" to any external links to improve performance and prevent security vulnerabilities.
     2. Optimise images with TinyPNG.
     3. Add aria label to anchor tags.
+    4. Change heading element tag to be in descending order.
 
 #### Mobile
 
