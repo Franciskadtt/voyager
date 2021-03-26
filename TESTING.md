@@ -61,6 +61,10 @@ To test accesibility and performance of website.
     4. Change heading element tag to be in descending order.
 
 #### Mobile
+* **Result**
+     1. Font-sizes too in certain paragraphs.
+* **Fix** 
+    2. Increase font-sizes to be more than 12px.
 
 ### [Responsinator](http://www.responsinator.com/)
 To test responsiveness of live website and functionalities on different size mobile devices.
