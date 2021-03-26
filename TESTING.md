@@ -4,23 +4,32 @@
 
 [View website in GitHub Pages](https://franciskadtt.github.io/voyager/)
 
-### Testing client stories from UX section
+### Testing user stories from UX section
 1. As a beginner to intermediate sailor, I want to have guidance on what to pack for a day/overnight trip.
-2. As a sailor, I want to make sure that I have remembered all the items to be packed by using a checklist
+    - In the Checklist section there is a comprehensive list of items divided into different categories so the user is guided on what to pack. The user does not have think of their own items or research for items.
+2. As a sailor, I want to make sure that I have remembered all the items to be packed by using a checklist.
+    - The "Checklist" section has a list of items underneath each other and has a function built in, where the user can "check-off" items from the list like they would in real life.
 3. As a user if I have packed an item on the list, I want to be able to check it off the list.
-4. As a sailor, I want to be able to list items I still need to buy 
+    - The user can click/tap on the "Check" button and it will remove the item from the "Items to Pack" list. The item will then move the "Already Packed" section.
+4. As a sailor, I want to be able to list items I still need to buy. 
+    - The user can click/tap on the "Buy" button and it will remove the item from the "Items to Pack" list and add it to the "To Buy" list where the user can easily see the items they need to buy.
 5. As a user if I have bought an item on the list, I want to be able to check it off the list.
+    - In the "To Buy" section the items appear with a "Check" button so that if the item is then bought and packed, it can be clicked/tapped. The item will then move the "Already Packed" section.
 6. As a sailor, I want to be able to find a sailing store to buy items (either physical or online).
+    - In the "Find a Store" section, the user has a choice of online or physical stores that sell sailing and marine items. 
+    - In the "Online Stores" section, the user can simply click/tap on the store link and they will be taken to the store's website.
+    - In the "Physical Stores" section, the user can interact with the Map and there are pre-populated markers to indicate physical store in the area. If the user click/tap on the map marker, the store's information will appear as well as a link to their website.
 7. As a user, I want to be able to see reviews from other users.
+    - In the Review Section, the user can view the feedback of the website tool in a carousel of testimonials from other users.
 8. As a user, I want to be able to share my own feedback regarding the checklist
-9. As a user, I want to be able to follow or connect with the creator of the site on social media
-
+    - The user can fill in the feedback form to give suggestions or feedback of the website tool.
+9. As a user, I want to be able to follow or connect with the creator of the site on social media.
+    - The user can click/tap on the social links which will take them to the creator's social media sites.
 
 ### Automated testing of website
 [TestProject](https://testproject.io/)
 - To test website functionailites
-#### Result:
-1. Test 1 - Found 2 issues:
+#### Result of Test 1 - Found 2 issues:
 * Carousel for reviews does not work
 * Link to LinkedIn showed 404 error
 #### Fix: 
