@@ -4,7 +4,7 @@
 
 [View website in GitHub Pages](https://franciskadtt.github.io/voyager/)
 
-### Testing user stories from UX section
+## Testing user stories from UX section
 1. As a beginner to intermediate sailor, I want to have guidance on what to pack for a day/overnight trip.
     - In the Checklist section there is a comprehensive list of items divided into different categories so the user is guided on what to pack. The user does not have think of their own items or research for items.
 2. As a sailor, I want to make sure that I have remembered all the items to be packed by using a checklist.
@@ -26,91 +26,92 @@
 9. As a user, I want to be able to follow or connect with the creator of the site on social media.
     - The user can click/tap on the social links which will take them to the creator's social media sites.
 
-### Automated testing of website
-[TestProject](https://testproject.io/)
-- To test website functionailites
-#### Result of Test 1 - Found 2 issues:
-* Carousel for reviews does not work
-* Link to LinkedIn showed 404 error
-#### Fix: 
-* Update link for Linkedin
-* Fix carousel by using bootstrap code
+## Automated testing of website
+### [TestProject](https://testproject.io/)
+To test website functionailites.
+* **Result**
+    1. Carousel for reviews does not work.
+    2. Link to LinkedIn showed 404 error.
+* **Fix** 
+    1. Update link for Linkedin.
+    2. Fix carousel by using bootstrap code.
 
 
-[Link Checker](https://validator.w3.org/checklink)
-- To check that all links are working and not broken.
-#### Result:
-Link to LinkedIn showed 404 error
-Some of the links to this resource point to broken URI fragments-  Lines: 12, 39, 54
-Broken fragments:
-* https://franciskadtt.github.io/voyager/#landing-section (lines 39, 54)
-#### Fix: 
-* Update link for Linkedin
-* Add id for landing section
+### [Link Checker](https://validator.w3.org/checklink)
+To check that all links are working and not broken.
+* **Result**
+    1. Link to LinkedIn showed 404 error.
+    2. Broken fragments for landing section link.
+* **Fix**  
+    * Update link for Linkedin.
+    * Add id for landing section.
 
-Lighthouse (Google dev tool)
-- To test accesibility and performance of website.
-#### Result:
-Desktop - attach report
-Mobile - attach report
-#### Fix:
+### Lighthouse (Google dev tool)
+To test accesibility and performance of website.
+* **Result**
+    1. Desktop - attach report
+    2. Mobile - attach report
+* **Fix** 
 
-[Responsinator](http://www.responsinator.com/)
-- To test responsiveness of live website and functionalities on different size mobile devices
-#### Result:
-Carousel issue on some wider /landscape devices
-#### Fix:
-* Fix carousel by using bootstrap code to ensure responsive
+### [Responsinator](http://www.responsinator.com/)
+To test responsiveness of live website and functionalities on different size mobile devices.
+* **Result**
+    1. Carousel issue on some wider /landscape devices.
+* **Fix** 
+    1. Fix carousel by using bootstrap code to ensure responsive on all devices.
 
-[Am I Responsive](http://ami.responsivedesign.is/)
-- To view images of website on different devices - insert image
-#### Result:
-Good
+### [Am I Responsive](http://ami.responsivedesign.is/)
+To view images of website on different devices.
+* **Result**
+    1. The responsiveness of the website looks good.
 
-[JSHint](https://jshint.com/)
-- To detect errors and potential problems in your JavaScript code.
-#### Result:
-Main script file:
-- Issues with not declaring variables - fixed
-- Issues variable name - fixed
-Email script file:
-- Issues with semicolons -fixed
-#### Fix:
+### [JSHint](https://jshint.com/)
+To detect errors and potential problems in your JavaScript code.
+1. Main script file:
+* **Result**
+    1. Issues with not declaring variables.
+    2. Issues variable name.
+* **Fix** 
+    1. Ensure variable is declared correctly.
+    2. Fix variable name.
+2. Email script file:
+* **Result**
+    1. Issues with semicolons that were missing.
+* **Fix** 
+    1. Add semicolons in correct places.
 
-[W3C CSS validation](https://jigsaw.w3.org/css-validator/)
-- To validate CCS code
-#### Result:
-1. Error: left is not a align-items value.
-2. Warning: Same colour background and border for check button.
-3. Warning: Same colour background and border for buy button.
-4. Warning: Same colour background and border for add-own button.
-5. Warning: Same colour background and border for store links.
-6. Warning: Same colour background and border for store-info button.
-7. Warning: unknown vendors for transition style.
-#### Fix:
-1. Fix Error: remove align-items.
-2. Fix Warnings for background and border colour: Remove border color.
-3.  Fix Warning for unknown vendors: Remove vendon extensions.
+### [W3C CSS validation](https://jigsaw.w3.org/css-validator/)
+To validate the CCS code of the project.
+* **Result**
+    1. Error: left is not a align-items value.
+    2. Warning: Same colour background and border for check button.
+    3. Warning: Same colour background and border for buy button.
+    4. Warning: Same colour background and border for add-own button.
+    5. Warning: Same colour background and border for store links.
+    6. Warning: Same colour background and border for store-info button.
+    7. Warning: unknown vendors for transition style.
+* **Fix** 
+    1. Fix Error: remove align-items.
+    2. Fix Warnings for background and border colour: Remove border color.
+    3. Fix Warning for unknown vendors: Remove vendon extensions.
 
-[W3C Markup Validation](https://validator.w3.org/)
-- To validate HTML code
-#### Result:
-1. Warning: The type attribute is unnecessary for JavaScript resources (2 scripts)
-2. Error: Attribute href not allowed on element button at this point.
-3. Error: An img element must have an alt attribute, except under certain conditions. (3 images)
-4. Error: The value of the for attribute of the label element must be the ID of a non-hidden form control.
-5. Error : The aria-describedby attribute must point to an element in the same document.
-#### Fix:
-1. Fix warning 1 = Remove 'type' attribute from scripts
-2. Fix warning 2 = Change 'button' tag to 'input' tag
-3. Add alt attributes to 3 carousel images
-4. Add identical for and id elements for label and input fields
-5. Remove aria-describedby attribute
+### [W3C Markup Validation](https://validator.w3.org/)
+To validate the HTML code of the project.
+* **Result**
+    1. Warning: The type attribute is unnecessary for JavaScript resources (2 scripts)
+    2. Error: Attribute href not allowed on element button at this point.
+    3. Error: An img element must have an alt attribute, except under certain conditions. (3 images)
+    4. Error: The value of the for attribute of the label element must be the ID of a non-hidden form control.
+    5. Error : The aria-describedby attribute must point to an element in the same document.
+* **Fix** 
+    1. Fix warning 1 = Remove 'type' attribute from scripts
+    2. Fix warning 2 = Change 'button' tag to 'input' tag
+    3. Add alt attributes to 3 carousel images
+    4. Add identical for and id elements for label and input fields
+    5. Remove aria-describedby attribute
 
-
-
-### Manual testing of all elements and functionality on every page
-1. Landing Section
+## Manual testing of all elements and functionality on every page
+1.  Landing Section
     1. Go to the "Landing" page from a desktop.
     2. Change the screen size from desktop to mobile to verify that the navigation bar is responsive and switches from in line menu to burger icon dropdown menu at the appropriate place.
     3. Reduce the width of the window to confirm that the image have correct focus for mobile and tablet.
