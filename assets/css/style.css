@@ -631,8 +631,9 @@ h2:after {
 
 .review-quote{
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     background-color: rgba(0, 0, 0, 0.3);
+    
 }
 
 @media (min-width: 650px){
@@ -678,7 +679,7 @@ h2:after {
 }
 
 .feedback-card-text{
-    font-size: 14px;;
+    font-size: 16px;;
 }
 
 /*--------------------------------------------Footer section */
@@ -705,7 +706,7 @@ h2:after {
     height: 32px;
     padding: 12px 0;
     border-radius: 50%;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 7px;
     text-align: center;
     color: #ffffff;
