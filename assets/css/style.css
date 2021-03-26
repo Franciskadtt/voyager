@@ -185,7 +185,7 @@ h2:after {
     padding-right: 7%;
     padding-top: 25px;
     color: #003348;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 @media (min-width: 900px){
@@ -206,12 +206,11 @@ h2:after {
     font-size: 45px;
 }}
 
-
 .icon-p{
     padding-top: 20px;
     font-weight: 500;
     color:#003348 ;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 @media (min-width: 900px){
@@ -352,7 +351,7 @@ h2:after {
 
 /*List items*/
 .list-group-item {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 
@@ -497,7 +496,6 @@ h2:after {
 }
 }
 
-
 #packed-body{
     text-align: left;
 }
@@ -566,6 +564,7 @@ h2:after {
     color: #ffffff;
     background-color:#003348;
     border-radius: 10px;
+    font-size: 15px;
 }
 
 .btn-store:hover {
@@ -613,6 +612,10 @@ h2:after {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
+.store-card-text{
+    font-size: 14px;
+}
+
 /*--------------------------------------------Review carousel*/
 
 #reviews-section{
@@ -628,7 +631,7 @@ h2:after {
 
 .review-quote{
     color: #fff;
-    font-size: 13px;
+    font-size: 14px;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -672,6 +675,10 @@ h2:after {
 }
 #feedback-title{
     text-align: center;
+}
+
+.feedback-card-text{
+    font-size: 14px;;
 }
 
 /*--------------------------------------------Footer section */
