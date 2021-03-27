@@ -23,8 +23,6 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-
-
 // Add Checklist Packed function
     function markPacked(event){
         // Get the element that triggered a specific event
@@ -52,7 +50,7 @@ function topFunction() {
         // Get element by id
         var targetList = document.getElementById('toBuyItems');
         // Create new item if selected 
-        var newBuyItem = ' <li class="list-group-item">  <div role="group" aria-label="Checklist Buttons" class="btn-position"> <button type="button" onClick="markPacked(event);" class="btn btn-check checkItem" data-itemname="' + selectedItem.getAttribute("data-buyitemname") + '"><i class="fas fa-check"></i></button> </div> ' + selectedItem.getAttribute("data-buyitemname") + '</li>';
+        newBuyItem = ' <li class="list-group-item">  <div role="group" aria-label="Checklist Buttons"> <button type="button" onClick="markPacked(event);" class="btn btn-check checkItem" data-itemname="' + selectedItem.getAttribute("data-buyitemname") + '">Check</button> </div> ' + selectedItem.getAttribute("data-buyitemname") + '</li>';
         // Where new item should be created
         var currentBuyList = targetList.innerHTML;
         targetList.innerHTML = currentBuyList + newBuyItem;
@@ -74,20 +72,20 @@ function topFunction() {
     var ownList = document.getElementById('ownItems');
     //Event listeners
     ownAddButton.addEventListener("click", addOwnItem);
-    ownList.addEventListener("click", deleteCheck);
-    ownList.addEventListener("click", checkOwnButton);
 
     //Function to add new items
     function addOwnItem(event) {
         event.preventDefault();
         //Add own list Div
         var ownListDiv = document.createElement('div');
-        ownListDiv.classList.add('ownlist-item');
+        ownListDiv.classList.add('Checklist');
+        ownListDiv.classList.add('Buttons');
         //Add own list item
         var newOwnList = document.createElement('li');
         newOwnList.innerText = ownInput.value;
-        newOwnList.classList.add('own-list-item');
-        ownListDiv.appendChild(newOwnList);
+        newOwnList.classList.add('list-group-item');
+        
+        // ownListDiv.appendChild(newOwnList);
         if(ownInput.value === ""){
             return null;
         }
@@ -95,39 +93,32 @@ function topFunction() {
         var checkOwnButton = document.createElement('button');
         checkOwnButton.innerHTML = 'Check';
         checkOwnButton.classList.add('btn', 'btn-check', 'checkItem');
+        checkOwnButton.setAttribute("data-itemname", ownInput.value);
         ownListDiv.appendChild(checkOwnButton);
         //Add Buy Button
         var buyOwnButton = document.createElement('button');
         buyOwnButton.innerHTML = 'Buy';
         buyOwnButton.classList.add('btn', 'btn-buy', 'to-buy-items');
+        buyOwnButton.setAttribute("data-buyitemname", ownInput.value);
         ownListDiv.appendChild(buyOwnButton);
         //Add Delete Buttons
         var deleteButton = document.createElement('button');
         deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
         deleteButton.classList.add('delete_btn');
         ownListDiv.appendChild(deleteButton);
-        //Append to Actual LIST
-        ownList.appendChild(ownListDiv);
         //Clear own item input VALUE
         ownInput.value = "";
+        
+        newOwnList.appendChild(ownListDiv);
+        // Event listeners 
+        checkOwnButton.addEventListener('click', markPacked, false);
+        buyOwnButton.addEventListener('click', markToBuy, false);
+        deleteButton.addEventListener('click', deleteCheck, false);
+        ownList.appendChild(newOwnList);
     }
 
-//Function what happens if click on delete button
+//Function for delete button
 function deleteCheck(e) {
     var item = e.target;
-    //Delete
-    if (item.classList[0] === "delete_btn") {
-        var ownItem = item.parentElement;
-        //Animation for delete item
-        ownItem.classList.add("disappear");
-        ownItem.addEventListener('transitionend', removeOwnItem);
-    }
-    //Check Item
-    if (item.classList[0] === "checkItem") {
-        owmItem.markPacked();
-    }
+    item.parentElement.parentElement.remove(); 
 }
-    //Function to delete own item
-    function removeOwnItem () {
-        ownItem.remove();
-            }
