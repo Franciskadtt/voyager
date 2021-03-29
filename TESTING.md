@@ -7,24 +7,35 @@
 ## Testing user stories from the UX section
 1. As a beginner to an intermediate sailor, I want to have guidance on what to pack for a day/overnight trip.
     - In the Checklist section there is a comprehensive list of items divided into different categories so the user is guided on what to pack. The user does not have to think of items themselves or research for items.
+        - [View image of List of categories and items](assets/wireframes/user-story-1.png)
 2. As a sailor, I want to make sure that I have remembered all the items to be packed by using a checklist.
     - The "Checklist" section has a list of items underneath each other and has a function built-in, where the user can "check-off" items from the list like they would in real life.
+        - [View image of Checklist item](assets/wireframes/user-story-2.png)
 3. As a user if I have packed an item on the list, I want to be able to check it off the list.
     - The user can click/tap on the "Check" button and it will remove the item from the "Items to Pack" list. The item will then move to the "Already Packed" section.
+        - [View image of item in Already packed list](assets/wireframes/user-story-3.png)
 4. As a sailor, I want to be able to list items I still need to buy. 
     - The user can click/tap on the "Buy" button and it will remove the item from the "Items to Pack" list and add it to the "To Buy" list where the user can easily see the items they need to buy.
+        - [View image of item in To Buy list](assets/wireframes/user-story-4.png)
 5. As a user if I have bought an item on the list, I want to be able to check it off the list.
     - In the "To Buy" section the items appear with a "Check" button so that if the item is then bought and packed, it can be clicked/tapped. The item will then move to the "Already Packed" section.
+        - [View image of item in To Buy list with check button](assets/wireframes/user-story-5.png)
 6. As a sailor, I want to be able to find a sailing store to buy items (either physical or online).
     - In the "Find a Store" section, the user has a choice of online or physical stores that sell sailing and marine items. 
+        - [View image of store options](assets/wireframes/user-story-6.png)
     - In the "Online Stores" section, the user can simply click/tap on the store link and they will be taken to the store's website.
+        - [View image of online store links](assets/wireframes/user-story-7.png)
     - In the "Physical Stores" section, the user can interact with the Map and there are pre-populated markers to indicate physical store in the area. If the user click/tap on the map marker, the store's information will appear as well as a link to their website.
+        - [View image of interactive physical store map with markers and store information cards](assets/wireframes/user-story-8.png)
 7. As a user, I want to be able to see reviews from other users.
     - In the Review Section, the user can view the feedback of the website tool in a carousel of testimonials from other users.
+        - [View image of interactive user review carousel](assets/wireframes/user-story-9.png)
 8. As a user, I want to be able to share my feedback regarding the checklist
     - The user can fill in the feedback form to give suggestions or feedback on the website tool.
+        - [View image of feedback form](assets/wireframes/user-story-10.png)
 9. As a user, I want to be able to follow or connect with the creator of the site on social media.
     - The user can click/tap on the social links which will take them to the creator's social media sites.
+        - [View image of social media links in footer](assets/wireframes/user-story-11.png)
 
 ## Automated testing of website
 ### [TestProject](https://testproject.io/)
