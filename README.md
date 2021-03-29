@@ -142,12 +142,11 @@ The website will be easy to navigate by using the navigation bar or by scrolling
 <a></a>
 ### Wireframe images:
 #### Low Fidelity
-- [Landing Page Section](assets/wireframes/landing_page.png)
+- [Landing Page Section](assets/wireframes/landing_section.png)
 - [About Section](assets/wireframes/about_section.png)
 - [Checklist Section](assets/wireframes/checklist_section.png)
-- [To Buy List Section](assets/wireframes/to_buy_list_section.png)
-- [Find a Store Section](assets/wireframes/find_a_store_section.png)
-- [Review Section](assets/wireframes/review section.png)
+- [Find a Store Section](assets/wireframes/store_section.png)
+- [Review Section](assets/wireframes/review_section.png)
 
 #### Medium Fidelity
 - [Mobile & Tablet](assets/wireframes/mobile_tablet_mf-wireframe.png)
