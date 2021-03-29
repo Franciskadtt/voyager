@@ -34,7 +34,9 @@ A sailing voyage needs some planning even for an experienced sailor. Voyager is 
     * [Features to be implemented](#features-to-be-implemented)
 * [Technologies used](#technologies-used)
     * [Languages](#languages)
-    * [Tools and Libraries](#tools-and-libraries)
+    * [Libraries](#libraries)
+    * [Tools](#tools)
+    * [Design](#design)
 * [Testing](#testing)
 * [Deployment](#deployment)
 * [Credits](#credits)
@@ -252,6 +254,7 @@ The website will be easy to navigate by using the navigation bar or by scrolling
 - [Google Maps API](https://developers.google.com/maps)
     - The project uses an API from **Google** for the map interaction and map markers
 
+<a></a>
 ### **Tools**
 - [Gitpod](https://www.gitpod.io/) - This developer used **Gitpod** for their IDE while building the website.
 - [Github](https://github.com/)
@@ -276,6 +279,13 @@ The website will be easy to navigate by using the navigation bar or by scrolling
     - For automated testing of website
 - [TinyPNG](https://tinypng.com/)
     - To optimise images for website loading time.
+
+<a></a>
+### **Design**
+- [Balsamiq](https://balsamiq.com/)
+    - To design low fidelity mockups
+- [Adobe XD](https://www.adobe.com/ie/products/xd.html)
+    - To design medium fidelity mockups
 
 <a></a>
 ## **Testing**
