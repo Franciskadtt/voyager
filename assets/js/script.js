@@ -1,13 +1,53 @@
 
+let toPackList = Array.prototype.slice.call(document.querySelectorAll('#optionsHolder li.list-group-item'));
+
+
+function loadInitialData(){
+    console.log("loaded", toPackList);
+    var currentPackedItems = JSON.parse(localStorage.getItem('packed')) || [];
+    var currentBoughtItems = JSON.parse(localStorage.getItem('bought')) || [];
+
+    toPackList.forEach(function (element){
+        const elementText = element.innerText.replace('option', '').replace('Buy', '').replace('Check', '').replace('BUY', '').replace('CHECK', '').replace(/\s+/g,' ').trim();
+        if (currentPackedItems.includes(elementText)){
+            element.classList.add('hideItem');
+            var targetList = document.getElementById('packedItems');
+            // Create new item if selected 
+            var newItem = ' <li class="list-group-item"> ' + elementText + ' </li>';
+            // Where new item should be created
+            var currentPackedList = targetList.innerHTML;
+            targetList.innerHTML = currentPackedList + newItem;
+        }
+        if (currentBoughtItems.includes(elementText)){
+            element.classList.add('hideItem');
+            var targetList = document.getElementById('toBuyItems');
+            // Create new item if selected 
+            newBuyItem = ' <li class="list-group-item">  <div role="group" aria-label="Checklist Buttons"> <button type="button" onClick="markPacked(event);" class="btn btn-check checkItem" data-itemname="' + elementText + '">Check</button> </div> ' + elementText + '</li>';
+            // Where new item should be created
+            var currentBuyList = targetList.innerHTML;
+            targetList.innerHTML = currentBuyList + newBuyItem;
+        }
+
+        
+    });
+}
+
+if (document.readyState === "complete" || document.readyState === "interactive") {
+    document.addEventListener("DOMContentLoaded", loadInitialData);
+} else {
+    document.addEventListener("DOMContentLoaded", loadInitialData);
+}
+
 /** Add scroll up function
 orginal code from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp with modifications for project
 */
-
 //Get the button
 var scrollUpButton = document.getElementById("scrollButton");
 
 // When the user scrolls down 40px from the top of the document, show the button
-window.onscroll = function() {scrollFunction();};
+window.onscroll = function() {
+    scrollFunction(); 
+};
 
 function scrollFunction() {
     if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
@@ -16,12 +56,62 @@ function scrollFunction() {
     scrollUpButton.style.display = "none";
     }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+function saveItem(action, itenName){
+    if (action.localeCompare('packed') ===0){
+        var currentSavedItemsPacked = localStorage.getItem('packed');
+        if (currentSavedItemsPacked=== null){
+            const itemsPacked = [itenName];
+            localStorage.setItem('packed',JSON.stringify(itemsPacked));
+        }
+        else{
+            var currentPackedItems = JSON.parse(localStorage.getItem('packed'));
+            currentPackedItems.push(itenName);
+            localStorage.setItem('packed',JSON.stringify(currentPackedItems));
+        }
+    }
+    if (action.localeCompare('bought') ===0){
+        var currentSavedItemsBought = localStorage.getItem('bought');
+        if (currentSavedItemsBought=== null){
+            const itemsBought = [itenName];
+            localStorage.setItem('bought',JSON.stringify(itemsBought));
+        }
+        else{
+            var currentBoughtItems = JSON.parse(localStorage.getItem('bought'));
+            currentBoughtItems.push(itenName);
+            localStorage.setItem('bought',JSON.stringify(currentBoughtItems));
+        }
+    }
+
+}
+
+function removeItem(action, item){
+    var currentPackedItems = JSON.parse(localStorage.getItem('packed')) || [];
+    var currentBoughtItems = JSON.parse(localStorage.getItem('bought')) || [];
+
+    if (action.localeCompare('bought') ===0){
+        const elementIndex = currentBoughtItems.indexOf(item);
+        console.log("trying to find elemet", item, elementIndex);
+        if (elementIndex > -1){
+            currentBoughtItems.splice(elementIndex, 1);
+            localStorage.setItem('bought',JSON.stringify(currentBoughtItems));
+        }
+    }
+    if (action.localeCompare('packed') ===0){
+        const elementIndex = currentSavedItemsPacked.indexOf(item);
+        if (elementIndex > -1){
+            currentSavedItemsPacked.splice(elementIndex, 1);
+            localStorage.setItem('packed',JSON.stringify(currentSavedItemsPacked));
+        }
+    }
+
+}
+
 
 // Add Checklist Packed function
     function markPacked(event){
@@ -36,6 +126,10 @@ function topFunction() {
         targetList.innerHTML = currentPackedList + newItem;
         // Hide item if selected
         selectedItem.parentElement.parentElement.classList.add('hideItem');
+        saveItem('packed', selectedItem.getAttribute("data-itemname"));
+        removeItem('bought', selectedItem.getAttribute("data-itemname"));
+
+
     }
     // Take each element clicked on
     var items = document.getElementsByClassName('checkItem');
@@ -56,6 +150,7 @@ function topFunction() {
         targetList.innerHTML = currentBuyList + newBuyItem;
         // Hide item if selected
         selectedItem.parentElement.parentElement.classList.add('hideItem');
+        saveItem('bought', selectedItem.getAttribute("data-buyitemname"));
     }
     // Take each element clicked on
     var itemsToBuy = document.getElementsByClassName('to-buy-items');
@@ -122,3 +217,10 @@ function deleteCheck(e) {
     var item = e.target;
     item.parentElement.parentElement.remove(); 
 }
+
+// Function for clear localStorage
+function clearLocalStorage(){
+    localStorage.clear();
+}
+var resetPage = document.getElementById('resetbutton');
+resetPage.addEventListener('click', clearLocalStorage);
