@@ -134,6 +134,14 @@ To validate the HTML code of the project.
     4. Add identical for and id elements for label and input fields
     5. Remove aria-describedby attribute
 
+### Google Dev Tool 
+To check for errors in JavaScript code
+* **Result**
+1. Error was showing up relating to "if (currentPackedItems.includes(elementText))"  in line 14 saying that currentPackedItems was not declared yet. This only occured if the page is opened for the first time and no data was selected previously
+* **Fix** 
+1. Becuase it there was no value yet (nothing stored), an error was returned. The fix was: Add "[]" so that error is not returned if no data stored
+
+
 ## Manual testing of all elements and functionality on every page
 1.  Landing Section
     1. Go to the "Landing" page from a desktop.
@@ -143,8 +151,10 @@ To validate the HTML code of the project.
     5. Click on the Start button which scrolls down to the Checklist section.
     6. Hover over the down arrow and verify if you hover over it, it moves as expected.
     7. Click on the down arrow which scrolls down to the About section.
+    8. Review all functionality and responsiveness on my mobile phone and tablet.
 2. About Section
     1. Click on the scroll up button which scrolls up to the Landing Section.
+    2. Review all functionality and responsiveness on my mobile phone and tablet.
 3. Checklist Section
     1. Reduce the width of the window to confirm that the textboxes move below each other for mobile and tablet view.
     2. Type in "Voyage Name" text box = Text displays.
@@ -160,18 +170,25 @@ To validate the HTML code of the project.
     12. Click on the "check" and buy" buttons if the user adds their own item in the "Own Items" List. Encountered a **bug** here where the item did not move to the "Already packed" or "To Buy" section. My mentor helped me to identify the issue. The function for creating the new own list item was targeting the wrong class and the list items should be the parent of the div in which the new items are created. In the HTML structure for the Wrapper for own list items also needed to just have a ul element and not be wrapped in a div. The last fix was to correct the event listeners 
     13. Click on "Clear the Decks" to refresh page = Page resets and removes all typed info inboxes and resets checklist.
     14. Click on the scroll up button = Scrolls up to the Landing Section.
+    15. Review all functionality and responsiveness on my mobile phone and tablet.
 4. Store Section
     1. Hover over the store item link = Verify if you hover over it, the colour change works as expected.
     2. Click on each store link and verify that the correct store site is opened in a new tab.
     3. Refresh the page several times to ensure Google maps is displaying correctly with the correct map markers.
     4. Click on each map marker and verify that on click the store information card displays.
     5. Resize page to verify the store information card displays below the Google Map for mobile and tablet.
+    6. Review all functionality and responsiveness on my mobile phone and tablet.
 5. Review Section
     1. Click on carousel arrows to move back and forth and verify it slides as expected.
     2. Try to submit the empty form and verify that an error message about the required fields appears
     3. Try to submit the form with an invalid email address and verify that a relevant error message appears
     4.  Reduce and expand the width of the window to verify that the form display behaves and centres the way expected and that it looks good on all device widths.
+    5. Review all functionality and responsiveness on my mobile phone and tablet.
 6. Footer Section
-    1. Verify all social media links go to social media pages - issue with the LinkedIn link 
+    1. Verify all social media links go to social media pages - issue with the LinkedIn link.
+    2. Review all functionality and responsiveness on my mobile phone and tablet.
 
 ## Further testing: 
+1. Asked fellow students, friends and family to look at the site on their devices and report any issues they find.
+2. Viewed my website on several devices, no further issues found.
+3. Review all functionality and responsiveness on different desktop browsers and the website displayed correctly in all browsers including Safari, Chrome, Edge, Internet Explorer, Firefox and Opera browsers.
