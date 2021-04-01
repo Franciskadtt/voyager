@@ -194,7 +194,7 @@
                 </div>
                 <div class="col-12">
                     <!-- Button to reset selections -->
-                    <input class="btn clear-btn" type="button" onclick="history.go(0)" value="Clear the decks" href="javascript:history.go(0)">
+                    <button id="resetbutton" onclick="history.go(0)" value="Clear the decks" href="javascript:history.go(0)" class="btn clear-btn">Clear the Decks</button>
                     <!-- Button to reset selections end -->
                 </div>
             </div>
@@ -465,10 +465,10 @@
                                 <!-- Navigation list with buttons -->
                                 <div class="tab-pane fade" id="pills-navigation" role="tabpanel" aria-labelledby="pills-navigation-tab">
                                     <ul class="list-group">
-                                        <li class="list-group-item">Arrival/Departure Checklists
+                                        <li class="list-group-item">Arrival Departure Checklists
                                             <div role="group" aria-label="Checklist Buttons">
-                                                <button type="button" class="btn btn-check checkItem" data-itemname="Arrival/Departure Checklists">Check</button>
-                                                <button type="button" class="btn btn-buy to-buy-items" data-buyitemname="Arrival/Departure Checklists">Buy</button>
+                                                <button type="button" class="btn btn-check checkItem" data-itemname="Arrival Departure Checklists">Check</button>
+                                                <button type="button" class="btn btn-buy to-buy-items" data-buyitemname="Arrival Departure Checklists">Buy</button>
                                             </div>
                                         </li>
                                         <li class="list-group-item">Binoculars
@@ -479,8 +479,8 @@
                                         </li>
                                         <li class="list-group-item">Calculator
                                             <div role="group" aria-label="Checklist Buttons">
-                                                <button type="button" class="btn btn-check checkItem" data-itemname="Binoculars">Check</button>
-                                                <button type="button" class="btn btn-buy to-buy-items" data-buyitemname="Binoculars">Buy</button>
+                                                <button type="button" class="btn btn-check checkItem" data-itemname="Calculator">Check</button>
+                                                <button type="button" class="btn btn-buy to-buy-items" data-buyitemname="Calculator">Buy</button>
                                             </div>
                                         </li>
                                         <li class="list-group-item">Charts
@@ -499,12 +499,6 @@
                                             <div role="group" aria-label="Checklist Buttons">
                                                 <button type="button" class="btn btn-check checkItem" data-itemname="Drawing Compass">Check</button>
                                                 <button type="button" class="btn btn-buy to-buy-items" data-buyitemname="Drawing Compass">Buy</button>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">Hand-bearing Compass
-                                            <div role="group" aria-label="Checklist Buttons">
-                                                <button type="button" class="btn btn-check checkItem" data-itemname="Hand-bearing Compass">Check</button>
-                                                <button type="button" class="btn btn-buy to-buy-items" data-buyitemname="Hand-bearing Compass">Buy</button>
                                             </div>
                                         </li>
                                         <li class="list-group-item">Hand-bearing Compass
@@ -925,8 +919,6 @@
     <!-- Footer section end -->  
 
 <!-- Scripts --> 
-    <!-- Main script file --> 
-    <script src="assets/js/script.js"></script>
     <!-- jQuery script --> 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <!-- Bootstrap script -->
@@ -939,6 +931,8 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChqqn8Ai2JeoWjYRLmo2mdSo8TaTdvHr0&callback=initMap"></script>
     <!-- Email script file --> 
     <script src="assets/js/sendEmail.js"></script>
+    <!-- Main script file --> 
+    <script src="assets/js/script.js"></script>
 <!-- Scripts end--> 
 
 </body>
