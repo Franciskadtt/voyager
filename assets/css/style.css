@@ -17,7 +17,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/*--------------------------------------------Headings*/
+/*---------------------------------------------- Specific Heading Styles */
 
 .hero-text{
     text-align: center;
@@ -54,7 +54,7 @@ h2:after {
     padding-top: 50px;
 }
 
-/*--------------------------------------------Hero Image*/
+/*--------------------------------------------------------Hero Image */
 
 .hero-image {
     background-position: 71%;
@@ -63,15 +63,18 @@ h2:after {
     height: 100vh;
 }
 
-/*--------------------------------------------Nav bar*/
+/*----------------------------------------------------------Nav bar */
 
-/* Centered section inside the top navigation original code https://www.w3schools.com/howto/howto_css_topnav_centered.asp */
+/* Centered navbar section inside the top navigation */ 
+/* original code https://www.w3schools.com/howto/howto_css_topnav_centered.asp */
 
+/* Hide logo for larger screens becuase of position */
 @media (min-width: 990px){
 #logo{
     display: none;
 }}
 
+/* Hide logo for smaller screens becuase of position */
 @media (max-width: 990px){
 #desktop-logo{
     display: none;
@@ -85,12 +88,15 @@ h2:after {
     transition: top 0.3s;
     font-weight: 400;
 }
+
 .navbar-left{
     margin-right: 20px;
 }
 
+/*--------------------------------------------------Hero Image Text*/
 
-/*--------------------------------------------Hero Image Text*/
+/* Text on Hero-image */
+/* Centered section inside the top navigation original code https://www.w3schools.com/howto/howto_css_hero_image.asp */
 .hero-text{
     position: absolute;
     top: 50%;
@@ -113,6 +119,7 @@ h2:after {
     padding-top: 40px;
 }
 
+/* Start button on Hero-image */
 .start-btn {
     color: #003348;
     background-color: #F7B045;
@@ -127,6 +134,7 @@ h2:after {
     font-weight: 500;
 }
 
+/* Arrow on Hero-image */
 .arrow{
     color: #ffffff;
     font-size: xx-large;
@@ -138,8 +146,9 @@ h2:after {
     margin-left: -25px; 
 }
 
-/*--------------------------------------------About Section*/
+/*-------------------------------------------------About Section*/
 
+/* About section container */
 #about-section{
     margin-bottom: 10%;
 }
@@ -148,36 +157,38 @@ h2:after {
     padding-top: 10%;
 }
 
+/* About section wave icons */
 .wave-icon{
     font-size: 45px;
     color: #CECECE;
 }
 
+/* About section wave icons larger screens */
 @media (min-width: 900px){
 .wave-icon{
     font-size: 75px;
 }}
 
-
+/* About section wave icon 1 */
 #wave1{
     text-align: right;
     margin-left: -10px;
     padding-bottom: 5%;
-
 }
 
+/* About section wave icon 2 */
 #wave2{
     text-align: left;
     margin-right: -10px;
     padding-top: 5%;
-    
 }
 
+/* About section content */
 .about-row{
     text-align: center;
 }
 
-
+/* About section paragraph */
 .p-wrapper{
     text-align: left;
     padding-left: 7%;
@@ -187,11 +198,13 @@ h2:after {
     font-size: 17px;
 }
 
+/* About section paragraph larger screens */
 @media (min-width: 900px){
 .p-wrapper{
     font-size: 18px;
 }}
 
+/* About section about icons */
 .icon-row{
     text-align: center;
 }
@@ -200,11 +213,14 @@ h2:after {
     font-size: 25px;
     color: #2FA59E;
 }
+
+/* About section about icons larger screens */
 @media (min-width: 900px){
 .about-icon{
     font-size: 45px;
 }}
 
+/* About section about icons text */
 .icon-p{
     padding-top: 20px;
     font-weight: 500;
@@ -212,12 +228,15 @@ h2:after {
     font-size: 16px;
 }
 
+/* About section about icons text larger screens */
 @media (min-width: 900px){
 .icon-p{
     font-size: 15px;
 }}
 
 /*--------------------------------------------Scroll up button*/
+
+/* Scroll up button and icon */
 #scrollButton {
     display: none;
     position: fixed;
@@ -240,11 +259,14 @@ h2:after {
     color: white;
 }
 
+/* Scroll up button icon */
 .scrollup-arrow{
     font-size: 20px;
 }
 
 /*--------------------------------------------Circle */
+
+/* Circle graphic shapes */
 .circle {
     width: 100px;
     height:  100px;
@@ -252,46 +274,44 @@ h2:after {
     border-radius: 50%;
     float: right;
     margin-right: -35px;
-    
 }
 
+/* Circle graphic shapes larger screens */
 @media (min-width: 900px){
 .circle {
     width: 150px;
     height:  150px;
 }}
 
-
 /*--------------------------------------------Check List intro */
 
+/* Checklist text boxes */
 #voyage-info{
     text-align: center;
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 50px;
 }
-
+/* Checklist info text box labels */
 .vgr-label{
     margin: 0;
     margin-top: 10px;
 }
 
-
 /*--------------------------------------------Checklist Intro buttons */
 
+/* Help Btn & Clear Btn position */
 #checklist-intro-btns{
     text-align: center;
     justify-content: center;
 }
 
-
-/*Help Btn & Modal */
+/* Help Button */
 .help-btn{
     color: #fff;
     background-color: #163A51;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 50px;
-    
 }
 
 .help-btn:hover{
@@ -299,43 +319,48 @@ h2:after {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
-/*Reset Btn*/
+/* Reset Button*/
 .clear-btn{
     color: #163A51;
     background-color: #F2B940;
     border-radius: 50px;
+    font-size: 12px;
+    font-weight: 500 ;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-/*--------------------------------------------Help Modal*/
+/*---------------------------------------------------Help Modal*/
 
+/* Modal Icon */
 #wave3{
     text-align: left;
     font-size: 40px;
     padding-top: 10px;
 }
 
+/* Modal paragraph */
 #modal-p{
     text-align: left;
 }
 
-/*--------------------------------------------Checklist Section*/
+/*--------------------------------------------Checklist Section */
 
-
+/* Checklist section */
 #checklist-section{
     background-color: #f0f1f2;
     padding-top: 90px;
     padding-bottom: 90px;
 }
 
-
+/* Checklist container */
 .checklist-container {
     max-width: none;
     padding-left: 5%;
     padding-right: 5%;
 }
 
-
-/*Categories*/
+/* Categories */
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
     background-color: #163A51;
@@ -354,14 +379,13 @@ h2:after {
 }
 
 
-/*Check Btn*/
+/* Check Button */
 .btn-check {
     color: #163A51;;
     background-color:#fff;
     border: 2px solid #163A51;;
     border-radius: 50px;;
     padding: 5px 10px;
-    
 }
 
 .btn-check:hover {
@@ -370,22 +394,22 @@ h2:after {
     border-radius: 50px;
 }
 
-/*Buy Btn*/
+/* Buy Button */
 .btn-buy {
     color: #25837E;
     background-color:#fff;
     border: 2px solid #25837E;
     border-radius: 50px;
     padding: 5px 15px;
-    
 }
+
 .btn-buy:hover {
     color: #fff;
     background-color:#25837E;
     border-radius: 50px;
 }
 
-/*Check List Scroll */
+/* Check List Scroll */
 .tab-pane{
     height: 550px;
     overflow-y: scroll;
@@ -395,13 +419,14 @@ h2:after {
     cursor: pointer;
 }
 
+/* To hide item on a list when it is checked or to be bought */
 .hideItem{
     display: none;
 }
 
-/*--------------------------------------------Own List*/
+/*--------------------------------------------Own List */
 
-/* Style own items input form*/
+/* Style own items input form */
 .own-list-form{
     display: flex;
     min-height: 15vh;
@@ -418,12 +443,12 @@ h2:after {
     width: 50%;
 }
 
-/*Own Items*/
+/* Own Items */
 .own-list-form{
     padding: 5px 15px;
 }
 
-/*Own Items Btn*/
+/* Own Items Button */
 .btn-add-own{
     color: #fff;
     background-color:#41C9C0;
@@ -477,18 +502,14 @@ h2:after {
     pointer-events: none;
 }
 
-/* Delete own item animation*/
-.disappear{
-    transform: translateY(10rem) scale(0.4) rotateZ(5deg);
-    opacity: 0;
-}
+/*-------------------------------------------- Already Packed Section */
 
-/*--------------------------------------------Packed Section */
-
+/* Already packed card */ 
 #packed-card{
     height: 400px;
 }
 
+/* Already packed card size larger screens*/ 
 @media (min-width: 990px){
 #packed-card{
     height: 600px;
@@ -501,10 +522,12 @@ h2:after {
 
 /*--------------------------------------------To Buy Section */
 
+/* Buy card size */ 
 #buy-card{
     height: 400px;
 }
 
+/* Buy card size for larger screens */ 
 @media (min-width: 990px){
 #buy-card{
     height: 600px;
@@ -520,10 +543,13 @@ h2:after {
 }
 
 /*--------------------------------------------Boat Icon */
+
+/* Boat icon for smaller screens */ 
 .boat-icon{
     text-align: center;
 }
 
+/* Hide Boat icon for larger screens */ 
 @media (min-width: 990px){
 .boat-icon{
     display:none;
@@ -532,11 +558,12 @@ h2:after {
 
 /*--------------------------------------------Find a Store Section*/
 
+/* Find a Store section */ 
 #store-section{
     padding-bottom: 20px;
 }
 
-
+/* Find a Store section container */ 
 .store-container{
     max-width: none;
     padding-left: 5%;
@@ -545,11 +572,13 @@ h2:after {
     align-items: center;
 }
 
+/* Online store section container */ 
 .online-wrapper{
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
+/* Store section */ 
 .store-text{
     text-align: center;
     font-size: 25px;
@@ -598,6 +627,7 @@ h2:after {
     justify-content: left ;
 }
 
+/* Store section size for larger screens */ 
 @media (min-width: 990px){
 .store{
     margin-top: 125px;
@@ -620,14 +650,16 @@ h2:after {
     font-size: 14px;
 }
 
-/*--------------------------------------------Review carousel*/
+/*--------------------------------------------Review carousel */
 
+/* Review section */ 
 #reviews-section{
     background-color: #f0f1f2;
     padding-top: 90px;
     padding-bottom: 90px;
 }
 
+/* Review carousel */ 
 #carouselExampleCaptions{
     margin-top: 50px;
     margin-bottom: 25px;
@@ -640,6 +672,7 @@ h2:after {
     
 }
 
+/* Review carousel for smaller screens */ 
 @media (min-width: 650px){
 .review-quote{
     color: #fff;
@@ -660,7 +693,9 @@ h2:after {
 }}
 
 
-/*--------------------------------------------Feedback card*/
+/*--------------------------------------------Feedback card */
+
+/* Feedback card */ 
 #feedback-card {
     width: 80vw;
     margin-left: 10%;
@@ -688,6 +723,7 @@ h2:after {
 
 /*--------------------------------------------Footer section */
 
+/* Footer container */ 
 .footer-section{
     left: 0;
     bottom: 0;
@@ -704,6 +740,7 @@ h2:after {
     padding-bottom: 10px;
 }
 
+/* Social links */ 
 /* orginal code from Code Institute Rosie Project */
 .social-links li a i {
     width: 32px;
