@@ -292,18 +292,22 @@ Testing information can be found in separate [TESTING.md file](TESTING.md)
 <a></a>
 ## **Deployment**
 
-This project was developed using the [Gitpod IDE](https://www.gitpod.io/), committed to git and pushed to GitHub using the built-in function within Gitpod.
+This project was developed using the [Gitpod IDE](https://www.gitpod.io/), committed to git and pushed to GitHub using the built-in function within Gitpod. After writing the code, committing and pushing it to GitHub:
+
+#### Log into GitHub.
+* Navigate to the repository on github and click **Settings**.
+* From there, go to the **Source section** within the Github Pages section.
+* Select **master branch** on the dropdown menu, and click save.
+* Now the website is live on:
+
+```
+https://yourgithubusername.github.io/your-repo-name
+```
+* Any time commits and pushes are sent to Github, the Github Pages site should update shortly after.
 
 To deploy this page to GitHub Pages from its [GitHub repository](https://github.com/Franciskadtt/voyager), the following steps were taken:
 
-#### Log into GitHub.
-1. From the list of repositories on the screen, select **Franciskadtt/franciskadutoit**.
-2. From the menu items near the top of the page, select **Settings**.
-3. Scroll down to the **GitHub Pages** section.
-4. Under **Source** click the drop-down menu labelled **None**  and select **Master Branch**.
-5. On selecting Master Branch the page is automatically refreshed, the website is now deployed.
-6. Scroll back down to the **GitHub Pages** section to retrieve the link to the deployed website.
-7. At the moment of submitting this Milestone project the Development Branch and Master Branch are identical.
+At the moment of submitting this Milestone project the Development Branch and Master Branch are identical.
 
 ### How to run this project locally
 To clone this project into Gitpod you will need:
@@ -330,10 +334,8 @@ To work on the project code within a local IDE:
 6. Type git clone, and then paste the URL you copied in Step 3.
 7. Press Enter. Your local clone will be created.
 
-At the moment of submitting this Milestone project, the Development Branch and Master Branch are identical.
-
 <a></a>
-## **Credits - to be completed**
+## **Credits**
 
 ### Content
 - The copy and text for this website was created by Franciska Du Toit
@@ -354,6 +356,10 @@ At the moment of submitting this Milestone project, the Development Branch and M
 - JS for own list item add from https://medium.com/@suryashakti1999/to-do-list-app-using-javascript-for-absolute-beginners-13ea9e38a033 with modifications for the project.
 - JS for the display of store card from https://stackoverflow.com/questions/22270664/how-to-remove-a-class-from-elements-in-pure-javascript with modifications for the project.
 - JS for map markers on the map from https://developers.google.com/maps/documentation/javascript/marker-clustering#maps_marker_clustering-javascript with modifications for the project.
+- JS line for storing objects in HTML5 localStorage from https://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage
+- JS line for return data and convert text into a JavaScript object from https://stackoverflow.com/questions/35273539/json-parse-from-localstorage-issue
+- JS line for placing object into storage from https://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage
+- JS Function for clear localStorage from https://stackoverflow.com/questions/19246053/add-or-clear-localstorage-on-button-click-and-show-the-value-in-html
 
 ### Acknowledgements
-- Thanks to my mentor Antonio Rodriquez for guiding me throughout this project. He helped me to brainstorm about how the layout would work best. He gave me excellent support especially with JavaScript and talking me through the logic of my code.
+- Thanks to my mentor Antonio Rodriquez for guiding me throughout this project. He helped me to brainstorm about how the layout would work best. He gave me excellent support especially with JavaScript and talking me through the logic.
