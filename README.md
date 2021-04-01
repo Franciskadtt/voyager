@@ -242,8 +242,6 @@ The website will be easy to navigate by using the navigation bar or by scrolling
     - The project uses Fontawesome for the icons
 - [Google Fonts](https://fonts.google.com/)
     - The project uses **Google fonts** to style the website fonts.
-- [jQuery](https://jquery.com/)
-    - The project uses **jQuery** to reference Javascript needed for the responsive navbar,
 - [Hover.css](https://cdnjs.com/libraries/hover.css/2.1.0)
     - The project uses **Hover.css** to apply hover effects to the projects navbar.
 - [Popper.js](https://popper.js.org/)
@@ -351,6 +349,7 @@ At the moment of submitting this Milestone project, the Development Branch and M
 - CSS for smooth scroll from https://css-tricks.com/snippets/jquery/smooth-scrolling/*/ 
 - CSS for own list items from https://medium.com/@suryashakti1999/to-do-list-app-using-javascript-for-absolute-beginners-13ea9e38a033*/
 - CSS for social links from Code Institute Rosie Project
+- CSS for Centered section inside the top navigation original from https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 - JS for scroll up function from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp with modifications for the project.
 - JS for own list item add from https://medium.com/@suryashakti1999/to-do-list-app-using-javascript-for-absolute-beginners-13ea9e38a033 with modifications for the project.
 - JS for the display of store card from https://stackoverflow.com/questions/22270664/how-to-remove-a-class-from-elements-in-pure-javascript with modifications for the project.
