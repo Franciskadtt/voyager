@@ -2,8 +2,7 @@
 
 [Main README.md file](README.md)
 
-[View website in GitHub Pages](https://franciskadtt.github.io/voyager/)
-
+[View live version of website via GitHub Pages](https://franciskadtt.github.io/voyager/)
 ## Testing user stories from the UX section
 1. As a beginner to an intermediate sailor, I want to have guidance on what to pack for a day/overnight trip.
     - In the Checklist section there is a comprehensive list of items divided into different categories so the user is guided on what to pack. The user does not have to think of items themselves or research for items.
@@ -102,6 +101,12 @@ To detect errors and potential problems in your JavaScript code.
     1. Issues with semicolons that were missing.
 * **Fix** 
     1. Add semicolons in the correct places.
+3. Maps script file:
+* **Result**
+    1. Warning: Do not use 'new' for side effects.
+* **Fix** 
+    1. As I got this line of code from [Google](https://developers.google.com/maps/documentation/javascript/marker-clustering), I did not remove the word "new".
+
 - Final version: no errors for https://franciskadtt.github.io/voyager/) if add /*jshint esversion: 6 */ at top of code so that JSHint does not raise unnecessary warnings for ECMAScript 6 features.
 
 ### [W3C CSS validation](https://jigsaw.w3.org/css-validator/)
