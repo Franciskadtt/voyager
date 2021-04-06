@@ -334,6 +334,18 @@ To work on the project code within a local IDE:
 6. Type git clone, and then paste the URL you copied in Step 3.
 7. Press Enter. Your local clone will be created.
 
+### How to ensure Google API works
+The API key is a unique identifier that authenticates requests associated with your project for usage and billing purposes. You must have at least one API key associated with your project. The API key in t
+
+To create an API key:
+
+1. Google maps require you to restrict your API key to certain URLs. Therefore you will have to create a [Google](https://developers.google.com/maps/documentation/javascript/get-api-key) account and get your own key.
+2. Go to the APIs & Services 
+3. Go to the Credentials page
+4. On the Credentials page, click Create credentials. The API key created dialog displays your newly created API key.
+5. Click Close.
+6. The new API key is listed on the Credentials page under API keys. (Remember to restrict the API key before using it in production.)
+
 <a></a>
 ## **Credits**
 
