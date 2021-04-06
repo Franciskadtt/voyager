@@ -345,6 +345,23 @@ To create an API key:
 5. Click Close.
 6. The new API key is listed on the Credentials page under API keys. (Remember to restrict the API key before using it in production.)
 
+### How to ensure EmailJS API works
+
+Set up EmailJS account
+1. Create an [EmailJS](https://www.emailjs.com/) account
+2. Create an email template: click on the Email Template section on the left-hand side.
+3. Click Create new template up at the top
+4. Choose the blank template 
+5. Fill in the template and say where we want the email to be sent to - click save
+6. Click on the Test button up at the top
+
+Connecting to EmailJS
+1. Go to the EmailJS website then documentation
+2. Click on installation and copy the EmailJS SDK
+3. Copy the code and paste the code in before the closing/head tag
+4. Get your user ID - you can get this from the Instructions page in the EmailJS dashboard.
+5. Paste it into your emailjs.init(). You can copy your custom EmailJS code (relating to parameters) and paste it into your JavaScript.
+
 <a></a>
 ## **Credits**
 
