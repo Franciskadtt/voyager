@@ -170,7 +170,7 @@ To check for errors in JavaScript code
     10. Click on the "+" button = New item is added to the "Own list" category.
     11. Click on the delete button in the "Own List" category = Item is deleted from that list.
     12. Click on the "check" and buy" buttons if the user adds their own item in the "Own Items" List. Encountered a **bug** here where the item did not move to the "Already packed" or "To Buy" section. My mentor helped me to identify the issue. The function for creating the new own list item was targeting the wrong class and the list items should be the parent of the div in which the new items are created. In the HTML structure for the Wrapper for own list items also needed to just have a ul element and not be wrapped in a div. The last fix was to correct the event listeners 
-    13. Click on "Clear the Decks" to refresh page = Page resets and removes all typed info inboxes and resets checklist.
+    13. Click on "Clear the Decks" to refresh page = Page resets and removes all typed info inboxes and resets checklist. Note: the local storage function and clear function does not work as expected for iOS 14 as it has additional restrictions on third-party content. It is therefore recommended to use the website non-iOS 14 devices if that functionality is to be used. This has been a general issue for Safari, for more info see (https://stackoverflow.com/questions/30048009/html5-localstorage-setitem-is-not-working-on-ios-8-safari-mobile).
     14. Click on the scroll up button = Scrolls up to the Landing Section.
     15. Review all functionality and responsiveness on my mobile phone and tablet.
 4. Store Section
