@@ -1,7 +1,7 @@
 
 // Function display and hide store info if click on marker
 function displayMarkerInfo(){
-    /** add class to hide all elements with store class - orginal code from: https://stackoverflow.com/questions/22270664/how-to-remove-a-class-from-elements-in-pure-javascript */
+    /** add class to hide all elements with store class - orginal code with modification from: https://stackoverflow.com/questions/22270664/how-to-remove-a-class-from-elements-in-pure-javascript */
     var elems = document.querySelectorAll(".store");
     [].forEach.call(elems, function(el) {
         el.classList.add("hide");
@@ -10,7 +10,7 @@ function displayMarkerInfo(){
     document.getElementById(this.storeId).classList.remove('hide');
 }
 
-/** Declare a function to create a map - original code https://developers.google.com/maps/documentation/javascript/marker-clustering#maps_marker_clustering-javascript with modifications for project */
+/** Declare a function to create a map - initMap function original code https://developers.google.com/maps/documentation/javascript/marker-clustering#maps_marker_clustering-javascript with modifications for project */
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 10,
@@ -37,6 +37,7 @@ function initMap() {
         return newMarker;
     });
 
+    /** New MarkerClusterer - initMap function original code https://developers.google.com/maps/documentation/javascript/marker-clustering */
     // Add a marker clusterer to manage the markers
     new MarkerClusterer(map, markers, {
         imagePath:

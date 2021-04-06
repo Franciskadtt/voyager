@@ -25,7 +25,7 @@ function loadInitialData(){
         }
         if (currentBoughtItems.includes(elementText)){
             element.classList.add('hideItem');
-            var targetList = document.getElementById('toBuyItems');
+            let targetList = document.getElementById('toBuyItems');
             // Create new item if selected 
             newBuyItem = ' <li class="list-group-item">  <div role="group" aria-label="Checklist Buttons"> <button type="button" onClick="markPacked(event);" class="btn btn-check checkItem" data-itemname="' + elementText + '">Check</button> </div> ' + elementText + '</li>';
             // Where new item should be created
@@ -49,11 +49,11 @@ function saveItem(action, itenName){
         var currentSavedItemsPacked = localStorage.getItem('packed');
         if (currentSavedItemsPacked=== null){
             const itemsPacked = [itenName];
-            /* Storing Objects in HTML5 localStorage original code with modification for project from: https://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage */
+            /* Storing Objects in HTML5 localStorage original line of code with modification for project from: https://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage */
             localStorage.setItem('packed',JSON.stringify(itemsPacked));
         }
         else{
-            /* Return data and convert text into a JavaScript object original code with modification for project from: https://stackoverflow.com/questions/35273539/json-parse-from-localstorage-issue */
+            /* Return data and convert text into a JavaScript object original line of code with modification for project from: https://stackoverflow.com/questions/35273539/json-parse-from-localstorage-issue */
             var currentPackedItems = JSON.parse(localStorage.getItem('packed'));
             // add item to list
             currentPackedItems.push(itenName);
@@ -88,7 +88,7 @@ function removeItem(action, item){
         if (elementIndex > -1){
             // To remove element
             currentBoughtItems.splice(elementIndex, 1);
-            /* Put the object into storage orginal code with modifications for project from https://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage */
+            /* Put the object into storage orginal line of code with modifications for project from https://stackoverflow.com/questions/2010892/storing-objects-in-html5-localstorage */
             localStorage.setItem('bought',JSON.stringify(currentBoughtItems));
         }
     }
@@ -205,8 +205,7 @@ function removeItem(action, item){
     }
 
 //CHECKLIST "CLEAR THE DECKS" BUTTON FEATURE
-/* Function for clear localStorage
-/orginal code from https://stackoverflow.com/questions/19246053/add-or-clear-localstorage-on-button-click-and-show-the-value-in-html */
+/* Function for clear localStorage - orginal code for function from https://stackoverflow.com/questions/19246053/add-or-clear-localstorage-on-button-click-and-show-the-value-in-html */
 function clearLocalStorage(){
     localStorage.clear();
 }
