@@ -37,7 +37,7 @@
     - The user can click/tap on the social links which will take them to the creator's social media sites.
         - [View image of social media links in footer](assets/wireframes/user-story-11.png)
 
-## Automated testing of website
+##  Testing and Validation of website
 ### [TestProject](https://testproject.io/)
 To test website functionailites.
 * **Result**
@@ -47,19 +47,19 @@ To test website functionailites.
     1. Update link for Linkedin.
     2. Fix the carousel by using bootstrap code.
 
-
 ### [Link Checker](https://validator.w3.org/checklink)
 To check that all links are working and not broken.
 * **Result**
     1. Link to LinkedIn showed 404 error.
     2. Broken fragments for landing section link.
+    3. Broken link in head of index.hmtl for google fonts.
 * **Fix**  
-    * Update link for Linkedin.
-    * Add id for landing section.
+    1. Update link for Linkedin.
+    2. Add id for landing section.
+    3. Remove broken link in head.
 
 ### Lighthouse (Google dev tool)
 To test the accessibility and performance of the website.
-#### Desktop
 * **Result**
     1. Links to cross-origin destinations are unsafe.
     2. Slow loading time for the website.
@@ -70,12 +70,9 @@ To test the accessibility and performance of the website.
     2. Optimise images with TinyPNG.
     3. Add aria-label to anchor tags.
     4. Change the heading element tag to be in descending order.
-
-#### Mobile
-* **Result**
-     1. Font-sizes too in certain paragraphs.
-* **Fix** 
-    2. Increase font-sizes to be more than 12px.
+- Further tests were done by using Lighthouse open source, the performance result was good, no issues were shown about timing, interactions, accesibility and SEO.
+- Final version: 
+![Lighthouse report ](assets/testing_images/lighthouse-report.png)
 
 ### [Responsinator](http://www.responsinator.com/)
 To test the responsiveness of the live website and functionalities on different size mobile devices.
@@ -83,11 +80,13 @@ To test the responsiveness of the live website and functionalities on different 
     1. Carousel issue on some wider /landscape devices.
 * **Fix** 
     1. Fix the carousel by using bootstrap code to ensure responsiveness on all devices.
+- Final version: [To view site on Responsinator ](https://www.responsinator.com/?url=https%3A%2F%2Ffranciskadtt.github.io%2Fvoyager%2F)
 
 ### [Am I Responsive](http://ami.responsivedesign.is/)
 To view images of the website on different devices.
 * **Result**
-    1. The responsiveness of the website looks good.
+    - The responsiveness of the website looks good.
+- Final version: ![Am I Responsive ](assets/testing_images/AmIResponsiveTestImage.png)
 
 ### [JSHint](https://jshint.com/)
 To detect errors and potential problems in your JavaScript code.
@@ -103,7 +102,7 @@ To detect errors and potential problems in your JavaScript code.
     1. Issues with semicolons that were missing.
 * **Fix** 
     1. Add semicolons in the correct places.
-- no errors for https://franciskadtt.github.io/voyager/) if add /*jshint esversion: 6 */ at top of code so that JSHint does not raise unnecessary warnings for ECMAScript 6 features.
+- Final version: no errors for https://franciskadtt.github.io/voyager/) if add /*jshint esversion: 6 */ at top of code so that JSHint does not raise unnecessary warnings for ECMAScript 6 features.
 
 ### [W3C CSS validation](https://jigsaw.w3.org/css-validator/)
 To validate the CCS code of the project.
@@ -121,7 +120,8 @@ To validate the CCS code of the project.
     2. Fix Warnings for background and border colour: Remove border colour.
     3. Fix Warning for unknown vendors: Remove vendor extensions.
     4. Fix Error: change element to anchor tag for to clear storage.
-- only errors and warnings left are from 3rd party apps (no errors or warnings for https://franciskadtt.github.io/voyager/)
+- Final version: only errors and warnings left are from 3rd party apps (no errors or warnings for https://franciskadtt.github.io/voyager/) 
+- ![CSS Validation](assets/testing_images/cssvalidator.png)
 
 ### [W3C Markup Validation](https://validator.w3.org/)
 To validate the HTML code of the project.
@@ -137,7 +137,8 @@ To validate the HTML code of the project.
     3. Add "alt" attributes to 3 carousel images
     4. Add identical for and id elements for label and input fields
     5. Remove aria-describedby attribute
-- no errors or warnings for https://franciskadtt.github.io/voyager/)
+- Final version: no errors or warnings for https://franciskadtt.github.io/voyager/)
+- ![HTMl Validation](assets/testing_images/htmlvalidation.png)
 
 ### Google Dev Tool 
 To check for errors in JavaScript code
@@ -145,7 +146,8 @@ To check for errors in JavaScript code
 1. Error was showing up relating to "if (currentPackedItems.includes(elementText))"  in line 14 saying that currentPackedItems was not declared yet. This only occured if the page is opened for the first time and no data was selected previously
 * **Fix** 
 1. Becuase it there was no value yet (nothing stored), an error was returned. The fix was: Add "[]" so that error is not returned if no data stored
-
+- Final version: no errors or warnings for https://franciskadtt.github.io/voyager/)
+- ![Google Dev Tool](assets/testing_images/googledevtool.png)
 
 ## Manual testing of all elements and functionality on every page
 1.  Landing Section
@@ -192,6 +194,8 @@ To check for errors in JavaScript code
 6. Footer Section
     1. Verify all social media links go to social media pages - issue with the LinkedIn link.
     2. Review all functionality and responsiveness on my mobile phone and tablet.
+7. 404 Error page
+    1. Verify go back button goes back to home page. I encountered a bug where for the live site the button did not want to work. I then changed the button element to an anchor element and ensure the href was "index.html".
 
 ## Further testing: 
 1. Asked fellow students, friends and family to look at the site on their devices and report any issues they find.
