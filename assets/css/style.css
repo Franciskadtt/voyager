@@ -4,7 +4,6 @@ body{
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     color: #003348;
-
 }
 
 section {
@@ -41,7 +40,6 @@ h2:after {
     width: 10%;
     height: 5px;
     background: #f2b940;
-    left: 0;
     bottom: 0;
     border-radius: 999px;
     left: 45%
@@ -82,6 +80,7 @@ h2:after {
 
 .navbar {
     box-shadow: none;
+    background-color: #fafafa;
     background-color: rgba(0, 0, 0, 0);
     top: 0;
     width: 100%;
@@ -138,7 +137,6 @@ h2:after {
 .arrow{
     color: #ffffff;
     font-size: xx-large;
-    bottom: 0;
     cursor: pointer;
     position: absolute;
     bottom: 10px;
@@ -484,7 +482,6 @@ h2:after {
 
 /* Style delete for own items list  */ 
 .delete_btn{
-    padding: 5px;
     background: #8f8f8f;
     color: white;
     border: none;
@@ -624,7 +621,6 @@ h2:after {
     padding-left: 10px; 
     margin-top: 20px;
     text-align: left;
-    justify-content: left ;
 }
 
 /* Store section size for larger screens */ 
@@ -669,7 +665,6 @@ h2:after {
     color: #fff;
     font-size: 16px;
     background-color: rgba(0, 0, 0, 0.3);
-    
 }
 
 /* Review carousel for smaller screens */ 
@@ -691,7 +686,6 @@ h2:after {
     color: #fff;
     font-size: large;
 }}
-
 
 /*--------------------------------------------Feedback card */
 
@@ -718,7 +712,8 @@ h2:after {
 }
 
 .feedback-card-text{
-    font-size: 16px;;
+    font-size: 16px;
+    text-align: center;
 }
 
 /*--------------------------------------------Footer section */
