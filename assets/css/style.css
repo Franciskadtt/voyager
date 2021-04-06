@@ -761,3 +761,64 @@ h2:after {
 .social-links {
     padding-bottom: 20px;
 }
+
+/*--------------------------------------------404 Page */
+#body-404 {
+    background-color: #fafafa;
+    text-align: center;
+    color: #003348 ;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    height: 100%;
+}
+
+#container-404 {
+    min-height: 100vh;
+    background-position: bottom 40vh right 51vw, top 52vh left 48vw;
+    background-repeat: no-repeat, no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+}
+
+.card-404 {
+    max-width: 311px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    box-shadow: 0 32px 128px rgba(0, 0, 0, 0.2);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.header-404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 77px 0 21px 0;
+    color: #fafafa;
+}
+
+.p1-404{
+    font-size: 20px;
+}
+
+.p-404{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn-404{
+    color: #003348;
+    background-color: #F7B045;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 50px;
+    padding-right: 20%;
+    padding-left: 20%;
+}
