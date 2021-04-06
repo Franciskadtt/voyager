@@ -24,7 +24,6 @@ A sailing voyage needs some planning even for an experienced sailor. Voyager is 
         * [Requirements](#requirements)
         * [Expectations](#expectations)
     * [Design](#design)
-        * [Fonts](#fonts)
         * [Icons](#icons)
         * [Colours](#colours)
         * [Logo](#logo)
@@ -102,7 +101,6 @@ Who are we building this website for?
 As the central theme of the website is sailing, I made all my design choices based on nautical colours & elements.
 I researched images and websites of boats, sailing and yachts to get inspiration for the colour scheme.
 
-<a></a>
 #### Fonts
 I used [Google Fonts](https://fonts.google.com/ "Google Fonts") to explore the various options.
 For the overall content I have decided to use the [Roboto](https://fonts.google.com/specimen/Roboto?preview.text_type=custom") Google fonts: Roboto") font. This font is modern and easily readable.
@@ -197,6 +195,7 @@ The website will be easy to navigate by using the navigation bar or by scrolling
 2. Have a contact form where user can give feedback on the website.
 3. Success message if the feedback form submitted successfully.
 4. Clear form if message submitted successfully.
+5. User and site owner get an email with emailjs (API).
 
 ### Footer
 1. Social links - click/tap on social icons to open a new page to social media pages.
