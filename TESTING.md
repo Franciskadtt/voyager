@@ -103,6 +103,7 @@ To detect errors and potential problems in your JavaScript code.
     1. Issues with semicolons that were missing.
 * **Fix** 
     1. Add semicolons in the correct places.
+- no errors for https://franciskadtt.github.io/voyager/) if add /*jshint esversion: 6 */ at top of code so that JSHint does not raise unnecessary warnings for ECMAScript 6 features.
 
 ### [W3C CSS validation](https://jigsaw.w3.org/css-validator/)
 To validate the CCS code of the project.
@@ -120,6 +121,7 @@ To validate the CCS code of the project.
     2. Fix Warnings for background and border colour: Remove border colour.
     3. Fix Warning for unknown vendors: Remove vendor extensions.
     4. Fix Error: change element to anchor tag for to clear storage.
+- only errors and warnings left are from 3rd party apps (no errors or warnings for https://franciskadtt.github.io/voyager/)
 
 ### [W3C Markup Validation](https://validator.w3.org/)
 To validate the HTML code of the project.
@@ -135,6 +137,7 @@ To validate the HTML code of the project.
     3. Add "alt" attributes to 3 carousel images
     4. Add identical for and id elements for label and input fields
     5. Remove aria-describedby attribute
+- no errors or warnings for https://franciskadtt.github.io/voyager/)
 
 ### Google Dev Tool 
 To check for errors in JavaScript code
