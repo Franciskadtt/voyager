@@ -114,10 +114,12 @@ To validate the CCS code of the project.
     5. Warning: Same colour background and border for store links.
     6. Warning: Same colour background and border for the store-info button.
     7. Warning: unknown vendors for transition style.
+    8. Error: cannot have href for button element (Clear the decks button)
 * **Fix** 
     1. Fix Error: remove align-items.
     2. Fix Warnings for background and border colour: Remove border colour.
     3. Fix Warning for unknown vendors: Remove vendor extensions.
+    4. Fix Error: change element to anchor tag for to clear storage.
 
 ### [W3C Markup Validation](https://validator.w3.org/)
 To validate the HTML code of the project.
